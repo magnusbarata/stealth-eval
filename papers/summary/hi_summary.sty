@@ -1,0 +1,43 @@
+%%%%% hi_summary.sty: HI科 卒研予稿概要 LaTeXスタイルファイル
+%%%%% Feb 8 2015: 初期バージョン作成 (kanzaki)
+%%%%% Feb 2 2017: セクションのヘッダ変更 (kanzaki)
+
+\usepackage{titlesec}
+
+%% caption周辺の余白を設定
+\setlength\abovecaptionskip{0pt}
+\setlength\belowcaptionskip{0pt}
+
+%% section周辺の余白を設定．順番に左インデント，上余白，下余白．
+\titlespacing{\section}{0pt}{10pt}{0pt}
+\titlespacing{\subsection}{0pt}{5pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{5pt}{0pt}
+
+%% sectionのカウンタ部分の表記
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.8zw}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.8zw}{}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{0.8zw}{}
+
+%% title関係の設定
+\def\etitle#1{\gdef\@etitle{#1}}
+\def\@etitle{}
+\def\supervisor#1{\gdef\@supervisor{#1}}
+\def\@supervisor{}
+\def\abstract#1{\gdef\@abstract{#1}}
+\def\@abstract{}
+
+\renewcommand\maketitle[0]{
+\begin{center}
+ \fontsize{16}{72}{\textgt{\@title}} \\
+ \fontsize{12}{72}{\textgt{\@etitle}} \normalsize \\ \vspace{1zw}
+ \@author 
+\end{center}
+\begin{flushright}
+指導教員: \@supervisor
+\end{flushright}
+
+\textit{\textbf{Abstract}}:
+\baselineskip = 4mm
+ \@abstract
+
+}
