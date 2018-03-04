@@ -46,7 +46,7 @@ for mgran,dfs in DFdef.DFS.items():
     ## Build Models
     for i,(algName,alg) in enumerate(algs.items()):
         print('###',algName,'###')
-        if algName == 'OCSVM': Xtr = combDF[mgran].values[:len(dfs['split'])+len(dfs['norm'])+len(dfs['orig']),0:5]
+        if algName == 'OCSVM': Xtr = combDF[mgran].values[:len(dfs['split'])+len(dfs['centos'])+len(dfs['orig']),0:5]
         else: Xtr = combDF[mgran].values[:,0:5]
 
         ## Scaling
