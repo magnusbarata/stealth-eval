@@ -1,0 +1,1069 @@
+.text,00400550,_start,B0,T,31ED,xor,xor_11,ebp,ebp,1,1,N,,xor,S
+.text,00400552,_start,B0,T,4989D1,mov,mov_11,r9,rdx,1,1,N,,mov,C
+.text,00400555,_start,B0,T,5E,pop,pop_10,rsi,,1,0,N,,pop,C
+.text,00400556,_start,B0,T,4889E2,mov,mov_11,rdx,rsp,1,1,N,,mov,C
+.text,00400559,_start,B0,T,4883E4F0,and,and_15,rsp,0FFFFFFFFFFFFFFF0h,1,5,N,,and,C
+.text,0040055D,_start,B0,T,50,push,push_10,rax,,1,0,N,,push,C
+.text,0040055E,_start,B0,T,54,push,push_10,rsp,,1,0,N,,push,C
+.text,0040055F,_start,B0,T,49C7C0C0134000,mov,mov_15,r8,offset __libc_csu_fini,1,5,N,_r.CODE,mov_r.CODE,C
+.text,00400566,_start,B0,T,48C7C150134000,mov,mov_15,rcx,offset __libc_csu_init,1,5,N,_r.CODE,mov_r.CODE,C
+.text,0040056D,_start,B0,T,48C7C7FD064000,mov,mov_15,rdi,offset main,1,5,N,_r.CODE,mov_r.CODE,C
+.text,00400574,_start,B0,T,E887FFFFFF,call,call_70,___libc_start_main,,7,0,J,.CODE,call.CODE,C
+.text,00400579,_start,B0,T,F4,hlt,hlt_00,,,0,0,N,,hlt,C
+.text,00400580,deregister_tm_clones,B1,T,B86F1A6000,mov,mov_15,eax,offset unk_601A6F,1,5,N,_r.DATA,mov_r.DATA,S
+.text,00400585,deregister_tm_clones,B1,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,00400586,deregister_tm_clones,B1,T,482D681A6000,sub,sub_15,rax,offset __bss_start,1,5,N,_r.DATA,sub_r.DATA,C
+.text,0040058C,deregister_tm_clones,B1,T,4883F80E,cmp,cmp_15,rax,0Eh,1,5,N,,cmp,C
+.text,00400590,deregister_tm_clones,B1,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400593,deregister_tm_clones,B1,T,761B,jbe,jbe_70,loc_4005B0,,7,0,J,.CODE,jbe.CODE,C
+.text,00400595,deregister_tm_clones,B2,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,0040059A,deregister_tm_clones,B2,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,0040059D,deregister_tm_clones,B2,T,7411,jz,jz_70,loc_4005B0,,7,0,J,.CODE,jz.CODE,C
+.text,0040059F,deregister_tm_clones,B3,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004005A0,deregister_tm_clones,B3,T,BF681A6000,mov,mov_15,edi,offset __bss_start,1,5,N,_r.DATA,mov_r.DATA,C
+.text,004005A5,deregister_tm_clones,B3,T,FFE0,jmp,jmp_10,rax,,1,0,J,,jmp,C
+.text,004005B0,deregister_tm_clones,B4,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004005B1,deregister_tm_clones,B4,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004005C0,register_tm_clones,B5,T,BE681A6000,mov,mov_15,esi,offset __bss_start,1,5,N,_r.DATA,mov_r.DATA,S
+.text,004005C5,register_tm_clones,B5,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,004005C6,register_tm_clones,B5,T,4881EE681A6000,sub,sub_15,rsi,offset __bss_start,1,5,N,_r.DATA,sub_r.DATA,C
+.text,004005CD,register_tm_clones,B5,T,48C1FE03,sar,sar_15,rsi,3,1,5,N,,sar,C
+.text,004005D1,register_tm_clones,B5,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004005D4,register_tm_clones,B5,T,4889F0,mov,mov_11,rax,rsi,1,1,N,,mov,C
+.text,004005D7,register_tm_clones,B5,T,48C1E83F,shr,shr_15,rax,3Fh,1,5,N,,shr,C
+.text,004005DB,register_tm_clones,B5,T,4801C6,add,add_11,rsi,rax,1,1,N,,add,C
+.text,004005DE,register_tm_clones,B5,T,48D1FE,sar,sar_15,rsi,1,1,5,N,,sar,C
+.text,004005E1,register_tm_clones,B5,T,7415,jz,jz_70,loc_4005F8,,7,0,J,.CODE,jz.CODE,C
+.text,004005E3,register_tm_clones,B6,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004005E8,register_tm_clones,B6,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,004005EB,register_tm_clones,B6,T,740B,jz,jz_70,loc_4005F8,,7,0,J,.CODE,jz.CODE,C
+.text,004005ED,register_tm_clones,B7,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004005EE,register_tm_clones,B7,T,BF681A6000,mov,mov_15,edi,offset __bss_start,1,5,N,_r.DATA,mov_r.DATA,C
+.text,004005F3,register_tm_clones,B7,T,FFE0,jmp,jmp_10,rax,,1,0,J,,jmp,C
+.text,004005F8,register_tm_clones,B8,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004005F9,register_tm_clones,B8,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400600,__do_global_dtors_aux,B9,T,803D6914200000,cmp,cmp_25,cs:completed_6661,0,2,5,N,_r.BSS,cmp_r.BSS,S
+.text,00400607,__do_global_dtors_aux,B9,T,7511,jnz,jnz_70,locret_40061A,,7,0,J,.CODE,jnz.CODE,C
+.text,00400609,__do_global_dtors_aux,B10,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,0040060A,__do_global_dtors_aux,B10,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040060D,__do_global_dtors_aux,B10,T,E86EFFFFFF,call,call_70,deregister_tm_clones,,7,0,J,.CODE,call.CODE,C
+.text,00400612,__do_global_dtors_aux,B10,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400613,__do_global_dtors_aux,B10,T,C6055614200001,mov,mov_25,cs:completed_6661,1,2,5,N,_w.BSS,mov_w.BSS,C
+.text,0040061A,__do_global_dtors_aux,B11,T,F3C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400620,frame_dummy,B12,T,BF28186000,mov,mov_15,edi,offset __JCR_LIST__,1,5,N,_r.DATA,mov_r.DATA,S
+.text,00400625,frame_dummy,B12,T,48833F00,cmp,cmp_35,qword ptr [rdi],0,3,5,N,,cmp,C
+.text,00400629,frame_dummy,B12,T,7505,jnz,jnz_70,loc_400630,,7,0,J,.CODE,jnz.CODE,C
+.text,0040062B,frame_dummy,B13,T,EB93,jmp,jmp_70,register_tm_clones,,7,0,J,.CODE,jmp.CODE,C
+.text,00400630,frame_dummy,B14,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400635,frame_dummy,B14,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,00400638,frame_dummy,B14,T,74F1,jz,jz_70,loc_40062B,,7,0,J,.CODE,jz.CODE,C
+.text,0040063A,frame_dummy,B15,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,0040063B,frame_dummy,B15,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040063E,frame_dummy,B15,T,FFD0,call,call_10,rax,,1,0,J,,call,C
+.text,00400640,frame_dummy,B15,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400641,frame_dummy,B15,T,E97AFFFFFF,jmp,jmp_70,register_tm_clones,,7,0,J,.CODE,jmp.CODE,C
+.text,00400646,encodeStrings_litStr0_i$nit,B16,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400647,encodeStrings_litStr0_i$nit,B16,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040064A,encodeStrings_litStr0_i$nit,B16,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,0040064B,encodeStrings_litStr0_i$nit,B16,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,0040064C,encodeStrings_litStr9_i$nit,B17,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,0040064D,encodeStrings_litStr9_i$nit,B17,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400650,encodeStrings_litStr9_i$nit,B17,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400651,encodeStrings_litStr9_i$nit,B17,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400652,encodeStrings_litStr2_i$nit,B18,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400653,encodeStrings_litStr2_i$nit,B18,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400656,encodeStrings_litStr2_i$nit,B18,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400657,encodeStrings_litStr2_i$nit,B18,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400658,encodeStrings_litStr6_i$nit,B19,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400659,encodeStrings_litStr6_i$nit,B19,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040065C,encodeStrings_litStr6_i$nit,B19,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,0040065D,encodeStrings_litStr6_i$nit,B19,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,0040065E,encodeStrings_litStr3_i$nit,B20,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,0040065F,encodeStrings_litStr3_i$nit,B20,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400662,encodeStrings_litStr3_i$nit,B20,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400663,encodeStrings_litStr3_i$nit,B20,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400664,megaInit,B21,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400665,megaInit,B21,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400668,megaInit,B21,T,E8D50C0000,call,call_70,encodeStrings_litStr7_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,0040066D,megaInit,B21,T,E87F000000,call,call_70,encodeStrings_litStr8_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400672,megaInit,B21,T,E8BF0C0000,call,call_70,encodeStrings_litStr1_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400677,megaInit,B21,T,E87B000000,call,call_70,encodeStrings_litStr12_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,0040067C,megaInit,B21,T,E8D1FFFFFF,call,call_70,encodeStrings_litStr2_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400681,megaInit,B21,T,E8D8FFFFFF,call,call_70,encodeStrings_litStr3_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400686,megaInit,B21,T,E820000000,call,call_70,encodeStrings_litStr5_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,0040068B,megaInit,B21,T,E8B80C0000,call,call_70,encodeStrings_litStr11_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400690,megaInit,B21,T,E8C3FFFFFF,call,call_70,encodeStrings_litStr6_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,00400695,megaInit,B21,T,E895020000,call,call_70,encodeStrings_litStr10_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,0040069A,megaInit,B21,T,E8ADFFFFFF,call,call_70,encodeStrings_litStr9_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,0040069F,megaInit,B21,T,E8A2FFFFFF,call,call_70,encodeStrings_litStr0_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,004006A4,megaInit,B21,T,E8930C0000,call,call_70,encodeStrings_litStr4_i$nit,,7,0,J,.CODE,call.CODE,C
+.text,004006A9,megaInit,B21,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006AA,megaInit,B21,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006AB,encodeStrings_litStr5_i$nit,B22,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006AC,encodeStrings_litStr5_i$nit,B22,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006AF,encodeStrings_litStr5_i$nit,B22,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006B0,encodeStrings_litStr5_i$nit,B22,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006B1,failed,B23,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006B2,failed,B23,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006B5,failed,B23,T,BEFE1A6000,mov,mov_15,esi,offset encodeStrings_litStr0,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004006BA,failed,B23,T,BF00000000,mov,mov_15,edi,0,1,5,N,,mov,C
+.text,004006BF,failed,B23,T,E871020000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004006C4,failed,B23,T,BFFE1A6000,mov,mov_15,edi,offset encodeStrings_litStr0,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004006C9,failed,B23,T,E812FEFFFF,call,call_70,_puts,,7,0,J,.CODE,call.CODE,C
+.text,004006CE,failed,B23,T,90,nop,nop_00,,,0,0,N,,nop,C
+.text,004006CF,failed,B23,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006D0,failed,B23,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006D1,succeeded,B24,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006D2,succeeded,B24,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006D5,succeeded,B24,T,BEE01A6000,mov,mov_15,esi,offset encodeStrings_litStr12,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004006DA,succeeded,B24,T,BF0C000000,mov,mov_15,edi,0Ch,1,5,N,,mov,C
+.text,004006DF,succeeded,B24,T,E851020000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004006E4,succeeded,B24,T,BFE01A6000,mov,mov_15,edi,offset encodeStrings_litStr12,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004006E9,succeeded,B24,T,E8F2FDFFFF,call,call_70,_puts,,7,0,J,.CODE,call.CODE,C
+.text,004006EE,succeeded,B24,T,90,nop,nop_00,,,0,0,N,,nop,C
+.text,004006EF,succeeded,B24,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006F0,succeeded,B24,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006F1,encodeStrings_litStr8_i$nit,B25,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006F2,encodeStrings_litStr8_i$nit,B25,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006F5,encodeStrings_litStr8_i$nit,B25,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006F6,encodeStrings_litStr8_i$nit,B25,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006F7,encodeStrings_litStr12_i$nit,B26,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006F8,encodeStrings_litStr12_i$nit,B26,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006FB,encodeStrings_litStr12_i$nit,B26,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006FC,encodeStrings_litStr12_i$nit,B26,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006FD,main,B27,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004006FE,main,B27,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400701,main,B27,T,4881EC40040000,sub,sub_15,rsp,440h,1,5,N,,sub,C
+.text,00400708,main,B27,T,89BDDCFBFFFF,mov,mov_41,[rbp+var_424],edi,4,1,N,,mov,C
+.text,0040070E,main,B27,T,4889B5D0FBFFFF,mov,mov_41,[rbp+var_430],rsi,4,1,N,,mov,C
+.text,00400715,main,B27,T,488995C8FBFFFF,mov,mov_41,[rbp+var_438],rdx,4,1,N,,mov,C
+.text,0040071C,main,B27,T,E843FFFFFF,call,call_70,megaInit,,7,0,J,.CODE,call.CODE,C
+.text,00400721,main,B27,T,8B85DCFBFFFF,mov,mov_14,eax,[rbp+var_424],1,4,N,,mov,C
+.text,00400727,main,B27,T,890553132000,mov,mov_21,cs:_global_argc,eax,2,1,N,_w.BSS,mov_w.BSS,C
+.text,0040072D,main,B27,T,488B85D0FBFFFF,mov,mov_14,rax,[rbp+var_430],1,4,N,,mov,C
+.text,00400734,main,B27,T,4889053D132000,mov,mov_21,cs:_global_argv,rax,2,1,N,_w.BSS,mov_w.BSS,C
+.text,0040073B,main,B27,T,488B85C8FBFFFF,mov,mov_14,rax,[rbp+var_438],1,4,N,,mov,C
+.text,00400742,main,B27,T,4889053F132000,mov,mov_21,cs:_global_envp,rax,2,1,N,_w.BSS,mov_w.BSS,C
+.text,00400749,main,B27,T,C745FC01000000,mov,mov_45,[rbp+var_4],1,4,5,N,,mov,C
+.text,00400750,main,B27,T,BEC01A6000,mov,mov_15,esi,offset encodeStrings_litStr1,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400755,main,B27,T,BF01000000,mov,mov_15,edi,1,1,5,N,,mov,C
+.text,0040075A,main,B27,T,E8D6010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,0040075F,main,B27,T,BFC01A6000,mov,mov_15,edi,offset encodeStrings_litStr1,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400764,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400769,main,B27,T,E882FDFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,0040076E,main,B27,T,BE0E1B6000,mov,mov_15,esi,offset encodeStrings_litStr2,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400773,main,B27,T,BF02000000,mov,mov_15,edi,2,1,5,N,,mov,C
+.text,00400778,main,B27,T,E8B8010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,0040077D,main,B27,T,488D85E0FEFFFF,lea,lea_14,rax,[rbp+s1],1,4,N,,lea,C
+.text,00400784,main,B27,T,4889C6,mov,mov_11,rsi,rax,1,1,N,,mov,C
+.text,00400787,main,B27,T,BF0E1B6000,mov,mov_15,edi,offset encodeStrings_litStr2,1,5,N,_r.BSS,mov_r.BSS,C
+.text,0040078C,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400791,main,B27,T,E8AAFDFFFF,call,call_70,___isoc99_scanf,,7,0,J,.CODE,call.CODE,C
+.text,00400796,main,B27,T,BE901A6000,mov,mov_15,esi,offset encodeStrings_litStr3,1,5,N,_r.BSS,mov_r.BSS,C
+.text,0040079B,main,B27,T,BF03000000,mov,mov_15,edi,3,1,5,N,,mov,C
+.text,004007A0,main,B27,T,E890010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004007A5,main,B27,T,BF901A6000,mov,mov_15,edi,offset encodeStrings_litStr3,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007AA,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004007AF,main,B27,T,E83CFDFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,004007B4,main,B27,T,BEF81A6000,mov,mov_15,esi,offset encodeStrings_litStr4,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007B9,main,B27,T,BF04000000,mov,mov_15,edi,4,1,5,N,,mov,C
+.text,004007BE,main,B27,T,E872010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004007C3,main,B27,T,488D85E0FDFFFF,lea,lea_14,rax,[rbp+var_220],1,4,N,,lea,C
+.text,004007CA,main,B27,T,4889C6,mov,mov_11,rsi,rax,1,1,N,,mov,C
+.text,004007CD,main,B27,T,BFF81A6000,mov,mov_15,edi,offset encodeStrings_litStr4,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007D2,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004007D7,main,B27,T,E864FDFFFF,call,call_70,___isoc99_scanf,,7,0,J,.CODE,call.CODE,C
+.text,004007DC,main,B27,T,BEA11A6000,mov,mov_15,esi,offset encodeStrings_litStr5,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007E1,main,B27,T,BF05000000,mov,mov_15,edi,5,1,5,N,,mov,C
+.text,004007E6,main,B27,T,E84A010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004007EB,main,B27,T,BFA11A6000,mov,mov_15,edi,offset encodeStrings_litStr5,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007F0,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004007F5,main,B27,T,E8F6FCFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,004007FA,main,B27,T,BE0B1B6000,mov,mov_15,esi,offset encodeStrings_litStr6,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004007FF,main,B27,T,BF06000000,mov,mov_15,edi,6,1,5,N,,mov,C
+.text,00400804,main,B27,T,E82C010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,00400809,main,B27,T,488D85E0FCFFFF,lea,lea_14,rax,[rbp+var_320],1,4,N,,lea,C
+.text,00400810,main,B27,T,4889C6,mov,mov_11,rsi,rax,1,1,N,,mov,C
+.text,00400813,main,B27,T,BF0B1B6000,mov,mov_15,edi,offset encodeStrings_litStr6,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400818,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,0040081D,main,B27,T,E81EFDFFFF,call,call_70,___isoc99_scanf,,7,0,J,.CODE,call.CODE,C
+.text,00400822,main,B27,T,BEAE1A6000,mov,mov_15,esi,offset encodeStrings_litStr7,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400827,main,B27,T,BF07000000,mov,mov_15,edi,7,1,5,N,,mov,C
+.text,0040082C,main,B27,T,E804010000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,00400831,main,B27,T,BFAE1A6000,mov,mov_15,edi,offset encodeStrings_litStr7,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400836,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,0040083B,main,B27,T,E8B0FCFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,00400840,main,B27,T,BEFB1A6000,mov,mov_15,esi,offset encodeStrings_litStr8,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400845,main,B27,T,BF08000000,mov,mov_15,edi,8,1,5,N,,mov,C
+.text,0040084A,main,B27,T,E8E6000000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,0040084F,main,B27,T,488D85E0FBFFFF,lea,lea_14,rax,[rbp+nptr],1,4,N,,lea,C
+.text,00400856,main,B27,T,4889C6,mov,mov_11,rsi,rax,1,1,N,,mov,C
+.text,00400859,main,B27,T,BFFB1A6000,mov,mov_15,edi,offset encodeStrings_litStr8,1,5,N,_r.BSS,mov_r.BSS,C
+.text,0040085E,main,B27,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400863,main,B27,T,E8D8FCFFFF,call,call_70,___isoc99_scanf,,7,0,J,.CODE,call.CODE,C
+.text,00400868,main,B27,T,488D85E0FBFFFF,lea,lea_14,rax,[rbp+nptr],1,4,N,,lea,C
+.text,0040086F,main,B27,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,00400872,main,B27,T,E8B9FCFFFF,call,call_70,_atoi,,7,0,J,.CODE,call.CODE,C
+.text,00400877,main,B27,T,8945F8,mov,mov_41,[rbp+var_8],eax,4,1,N,,mov,C
+.text,0040087A,main,B27,T,BED11A6000,mov,mov_15,esi,offset encodeStrings_litStr9,1,5,N,_r.BSS,mov_r.BSS,C
+.text,0040087F,main,B27,T,BF09000000,mov,mov_15,edi,9,1,5,N,,mov,C
+.text,00400884,main,B27,T,E8AC000000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,00400889,main,B27,T,488D85E0FEFFFF,lea,lea_14,rax,[rbp+s1],1,4,N,,lea,C
+.text,00400890,main,B27,T,BED11A6000,mov,mov_15,esi,offset encodeStrings_litStr9,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400895,main,B27,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,00400898,main,B27,T,E873FCFFFF,call,call_70,_strcmp,,7,0,J,.CODE,call.CODE,C
+.text,0040089D,main,B27,T,8945F4,mov,mov_41,[rbp+var_C],eax,4,1,N,,mov,C
+.text,004008A0,main,B27,T,BEF01A6000,mov,mov_15,esi,offset encodeStrings_litStr10,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004008A5,main,B27,T,BF0A000000,mov,mov_15,edi,0Ah,1,5,N,,mov,C
+.text,004008AA,main,B27,T,E886000000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004008AF,main,B27,T,488D85E0FDFFFF,lea,lea_14,rax,[rbp+var_220],1,4,N,,lea,C
+.text,004008B6,main,B27,T,BEF01A6000,mov,mov_15,esi,offset encodeStrings_litStr10,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004008BB,main,B27,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,004008BE,main,B27,T,E84DFCFFFF,call,call_70,_strcmp,,7,0,J,.CODE,call.CODE,C
+.text,004008C3,main,B27,T,8945F0,mov,mov_41,[rbp+var_10],eax,4,1,N,,mov,C
+.text,004008C6,main,B27,T,BE111B6000,mov,mov_15,esi,offset encodeStrings_litStr11,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004008CB,main,B27,T,BF0B000000,mov,mov_15,edi,0Bh,1,5,N,,mov,C
+.text,004008D0,main,B27,T,E860000000,call,call_70,_1_stringEncoder,,7,0,J,.CODE,call.CODE,C
+.text,004008D5,main,B27,T,488D85E0FCFFFF,lea,lea_14,rax,[rbp+var_320],1,4,N,,lea,C
+.text,004008DC,main,B27,T,BE111B6000,mov,mov_15,esi,offset encodeStrings_litStr11,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004008E1,main,B27,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,004008E4,main,B27,T,E827FCFFFF,call,call_70,_strcmp,,7,0,J,.CODE,call.CODE,C
+.text,004008E9,main,B27,T,8945EC,mov,mov_41,[rbp+var_14],eax,4,1,N,,mov,C
+.text,004008EC,main,B27,T,837DF400,cmp,cmp_45,[rbp+var_C],0,4,5,N,,cmp,C
+.text,004008F0,main,B27,T,7531,jnz,jnz_70,loc_400923,,7,0,J,.CODE,jnz.CODE,C
+.text,004008F2,main,B28,T,837DF000,cmp,cmp_45,[rbp+var_10],0,4,5,N,,cmp,C
+.text,004008F6,main,B28,T,7524,jnz,jnz_70,loc_40091C,,7,0,J,.CODE,jnz.CODE,C
+.text,004008F8,main,B29,T,837DEC00,cmp,cmp_45,[rbp+var_14],0,4,5,N,,cmp,C
+.text,004008FC,main,B29,T,7517,jnz,jnz_70,loc_400915,,7,0,J,.CODE,jnz.CODE,C
+.text,004008FE,main,B30,T,817DF8D2040000,cmp,cmp_45,[rbp+var_8],4D2h,4,5,N,,cmp,C
+.text,00400905,main,B30,T,7507,jnz,jnz_70,loc_40090E,,7,0,J,.CODE,jnz.CODE,C
+.text,00400907,main,B31,T,E8C5FDFFFF,call,call_70,succeeded,,7,0,J,.CODE,call.CODE,C
+.text,0040090C,main,B31,T,EB1A,jmp,jmp_70,loc_400928,,7,0,J,.CODE,jmp.CODE,C
+.text,0040090E,main,B32,T,E89EFDFFFF,call,call_70,failed,,7,0,J,.CODE,call.CODE,C
+.text,00400913,main,B32,T,EB13,jmp,jmp_70,loc_400928,,7,0,J,.CODE,jmp.CODE,C
+.text,00400915,main,B33,T,E897FDFFFF,call,call_70,failed,,7,0,J,.CODE,call.CODE,C
+.text,0040091A,main,B33,T,EB0C,jmp,jmp_70,loc_400928,,7,0,J,.CODE,jmp.CODE,C
+.text,0040091C,main,B34,T,E890FDFFFF,call,call_70,failed,,7,0,J,.CODE,call.CODE,C
+.text,00400921,main,B34,T,EB05,jmp,jmp_70,loc_400928,,7,0,J,.CODE,jmp.CODE,C
+.text,00400923,main,B35,T,E889FDFFFF,call,call_70,failed,,7,0,J,.CODE,call.CODE,C
+.text,00400928,main,B36,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,0040092D,main,B36,T,C9,leave,leave_00,,,0,0,N,,leave,C
+.text,0040092E,main,B36,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,0040092F,encodeStrings_litStr10_i$nit,B37,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400930,encodeStrings_litStr10_i$nit,B37,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400933,encodeStrings_litStr10_i$nit,B37,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400934,encodeStrings_litStr10_i$nit,B37,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400935,_1_stringEncoder,B38,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400936,_1_stringEncoder,B38,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400939,_1_stringEncoder,B38,T,897DEC,mov,mov_41,[rbp+var_14],edi,4,1,N,,mov,C
+.text,0040093C,_1_stringEncoder,B38,T,488975E0,mov,mov_41,[rbp+var_20],rsi,4,1,N,,mov,C
+.text,00400940,_1_stringEncoder,B38,T,C745FC00000000,mov,mov_45,[rbp+var_4],0,4,5,N,,mov,C
+.text,00400947,_1_stringEncoder,B38,T,837DEC0C,cmp,cmp_45,[rbp+var_14],0Ch,4,5,N,,cmp,C
+.text,0040094B,_1_stringEncoder,B38,T,0F87E3090000,ja,ja_70,loc_401334,,7,0,J,.CODE,ja.CODE,C
+.text,00400951,_1_stringEncoder,B39,T,8B45EC,mov,mov_14,eax,[rbp+var_14],1,4,N,,mov,C
+.text,00400954,_1_stringEncoder,B39,T,488B04C5D8134000,mov,mov_12,rax,ds:off_4013D8[rax*8],1,2,N,_r.DATA,mov_r.DATA,C
+.text,0040095C,_1_stringEncoder,B39,T,FFE0,jmp,jmp_10,rax,,1,0,J,.CODE,jmp.CODE,C
+.text,0040095E,_1_stringEncoder,B40,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400961,_1_stringEncoder,B40,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400964,_1_stringEncoder,B40,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400968,_1_stringEncoder,B40,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040096B,_1_stringEncoder,B40,T,C60025,mov,mov_35,byte ptr [rax],25h,3,5,N,,mov,C
+.text,0040096E,_1_stringEncoder,B40,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400972,_1_stringEncoder,B40,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400975,_1_stringEncoder,B40,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400978,_1_stringEncoder,B40,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040097C,_1_stringEncoder,B40,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040097F,_1_stringEncoder,B40,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400982,_1_stringEncoder,B40,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400986,_1_stringEncoder,B40,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400989,_1_stringEncoder,B40,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040098C,_1_stringEncoder,B40,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400990,_1_stringEncoder,B40,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400993,_1_stringEncoder,B40,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400996,_1_stringEncoder,B40,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040099A,_1_stringEncoder,B40,T,E995090000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,0040099F,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004009A2,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004009A5,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004009A9,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004009AC,_1_stringEncoder,B41,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,004009AF,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004009B3,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004009B6,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004009B9,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004009BD,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004009C0,_1_stringEncoder,B41,T,C60075,mov,mov_35,byte ptr [rax],75h,3,5,N,,mov,C
+.text,004009C3,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004009C7,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004009CA,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004009CD,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004009D1,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004009D4,_1_stringEncoder,B41,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,004009D7,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004009DB,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004009DE,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004009E1,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004009E5,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004009E8,_1_stringEncoder,B41,T,C60068,mov,mov_35,byte ptr [rax],68h,3,5,N,,mov,C
+.text,004009EB,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004009EF,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004009F2,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004009F5,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004009F9,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004009FC,_1_stringEncoder,B41,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,004009FF,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A03,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A06,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A09,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A0D,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A10,_1_stringEncoder,B41,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400A13,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A17,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A1A,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A1D,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A21,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A24,_1_stringEncoder,B41,T,C60075,mov,mov_35,byte ptr [rax],75h,3,5,N,,mov,C
+.text,00400A27,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A2B,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A2E,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A31,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A35,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A38,_1_stringEncoder,B41,T,C60063,mov,mov_35,byte ptr [rax],63h,3,5,N,,mov,C
+.text,00400A3B,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A3F,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A42,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A45,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A49,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A4C,_1_stringEncoder,B41,T,C60063,mov,mov_35,byte ptr [rax],63h,3,5,N,,mov,C
+.text,00400A4F,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A53,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A56,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A59,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A5D,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A60,_1_stringEncoder,B41,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400A63,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A67,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A6A,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A6D,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A71,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A74,_1_stringEncoder,B41,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400A77,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A7B,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A7E,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A81,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A85,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A88,_1_stringEncoder,B41,T,C60064,mov,mov_35,byte ptr [rax],64h,3,5,N,,mov,C
+.text,00400A8B,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A8F,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A92,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400A95,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400A99,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A9C,_1_stringEncoder,B41,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400A9F,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400AA3,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400AA6,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400AA9,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400AAD,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400AB0,_1_stringEncoder,B41,T,C60064,mov,mov_35,byte ptr [rax],64h,3,5,N,,mov,C
+.text,00400AB3,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400AB7,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400ABA,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400ABD,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400AC1,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400AC4,_1_stringEncoder,B41,T,C60021,mov,mov_35,byte ptr [rax],21h,3,5,N,,mov,C
+.text,00400AC7,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400ACB,_1_stringEncoder,B41,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400ACE,_1_stringEncoder,B41,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400AD1,_1_stringEncoder,B41,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400AD5,_1_stringEncoder,B41,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400AD8,_1_stringEncoder,B41,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400ADB,_1_stringEncoder,B41,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400ADF,_1_stringEncoder,B41,T,E950080000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400AE4,_1_stringEncoder,B42,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400AE7,_1_stringEncoder,B42,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400AEA,_1_stringEncoder,B42,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400AEE,_1_stringEncoder,B42,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400AF1,_1_stringEncoder,B42,T,C60025,mov,mov_35,byte ptr [rax],25h,3,5,N,,mov,C
+.text,00400AF4,_1_stringEncoder,B42,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400AF8,_1_stringEncoder,B42,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400AFB,_1_stringEncoder,B42,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400AFE,_1_stringEncoder,B42,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B02,_1_stringEncoder,B42,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B05,_1_stringEncoder,B42,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400B08,_1_stringEncoder,B42,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B0C,_1_stringEncoder,B42,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B0F,_1_stringEncoder,B42,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B12,_1_stringEncoder,B42,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B16,_1_stringEncoder,B42,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B19,_1_stringEncoder,B42,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400B1C,_1_stringEncoder,B42,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B20,_1_stringEncoder,B42,T,E90F080000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400B25,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B28,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B2B,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B2F,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B32,_1_stringEncoder,B43,T,C60045,mov,mov_35,byte ptr [rax],45h,3,5,N,,mov,C
+.text,00400B35,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B39,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B3C,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B3F,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B43,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B46,_1_stringEncoder,B43,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400B49,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B4D,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B50,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B53,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B57,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B5A,_1_stringEncoder,B43,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,00400B5D,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B61,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B64,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B67,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B6B,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B6E,_1_stringEncoder,B43,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400B71,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B75,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B78,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B7B,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B7F,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B82,_1_stringEncoder,B43,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400B85,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B89,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400B8C,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400B8F,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400B93,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400B96,_1_stringEncoder,B43,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400B99,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400B9D,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400BA0,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400BA3,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400BA7,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400BAA,_1_stringEncoder,B43,T,C60075,mov,mov_35,byte ptr [rax],75h,3,5,N,,mov,C
+.text,00400BAD,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400BB1,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400BB4,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400BB7,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400BBB,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400BBE,_1_stringEncoder,B43,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400BC1,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400BC5,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400BC8,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400BCB,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400BCF,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400BD2,_1_stringEncoder,B43,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400BD5,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400BD9,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400BDC,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400BDF,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400BE3,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400BE6,_1_stringEncoder,B43,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400BE9,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400BED,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400BF0,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400BF3,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400BF7,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400BFA,_1_stringEncoder,B43,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400BFD,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C01,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C04,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C07,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C0B,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C0E,_1_stringEncoder,B43,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00400C11,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C15,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C18,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C1B,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C1F,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C22,_1_stringEncoder,B43,T,C6006D,mov,mov_35,byte ptr [rax],6Dh,3,5,N,,mov,C
+.text,00400C25,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C29,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C2C,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C2F,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C33,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C36,_1_stringEncoder,B43,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400C39,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C3D,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C40,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C43,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C47,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C4A,_1_stringEncoder,B43,T,C6003A,mov,mov_35,byte ptr [rax],3Ah,3,5,N,,mov,C
+.text,00400C4D,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C51,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C54,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C57,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C5B,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C5E,_1_stringEncoder,B43,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400C61,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C65,_1_stringEncoder,B43,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C68,_1_stringEncoder,B43,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C6B,_1_stringEncoder,B43,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C6F,_1_stringEncoder,B43,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C72,_1_stringEncoder,B43,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400C75,_1_stringEncoder,B43,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C79,_1_stringEncoder,B43,T,E9B6060000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400C7E,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C81,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C84,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C88,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C8B,_1_stringEncoder,B44,T,C60045,mov,mov_35,byte ptr [rax],45h,3,5,N,,mov,C
+.text,00400C8E,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400C92,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400C95,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400C98,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400C9C,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400C9F,_1_stringEncoder,B44,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400CA2,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400CA6,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400CA9,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400CAC,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400CB0,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400CB3,_1_stringEncoder,B44,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,00400CB6,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400CBA,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400CBD,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400CC0,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400CC4,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400CC7,_1_stringEncoder,B44,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400CCA,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400CCE,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400CD1,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400CD4,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400CD8,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400CDB,_1_stringEncoder,B44,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400CDE,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400CE2,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400CE5,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400CE8,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400CEC,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400CEF,_1_stringEncoder,B44,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400CF2,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400CF6,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400CF9,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400CFC,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D00,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D03,_1_stringEncoder,B44,T,C60070,mov,mov_35,byte ptr [rax],70h,3,5,N,,mov,C
+.text,00400D06,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D0A,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D0D,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D10,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D14,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D17,_1_stringEncoder,B44,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00400D1A,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D1E,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D21,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D24,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D28,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D2B,_1_stringEncoder,B44,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400D2E,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D32,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D35,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D38,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D3C,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D3F,_1_stringEncoder,B44,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400D42,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D46,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D49,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D4C,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D50,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D53,_1_stringEncoder,B44,T,C60077,mov,mov_35,byte ptr [rax],77h,3,5,N,,mov,C
+.text,00400D56,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D5A,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D5D,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D60,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D64,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D67,_1_stringEncoder,B44,T,C6006F,mov,mov_35,byte ptr [rax],6Fh,3,5,N,,mov,C
+.text,00400D6A,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D6E,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D71,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D74,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D78,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D7B,_1_stringEncoder,B44,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400D7E,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D82,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D85,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D88,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400D8C,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400D8F,_1_stringEncoder,B44,T,C60064,mov,mov_35,byte ptr [rax],64h,3,5,N,,mov,C
+.text,00400D92,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400D96,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400D99,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400D9C,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400DA0,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400DA3,_1_stringEncoder,B44,T,C6003A,mov,mov_35,byte ptr [rax],3Ah,3,5,N,,mov,C
+.text,00400DA6,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400DAA,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400DAD,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400DB0,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400DB4,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400DB7,_1_stringEncoder,B44,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400DBA,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400DBE,_1_stringEncoder,B44,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400DC1,_1_stringEncoder,B44,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400DC4,_1_stringEncoder,B44,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400DC8,_1_stringEncoder,B44,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400DCB,_1_stringEncoder,B44,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400DCE,_1_stringEncoder,B44,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400DD2,_1_stringEncoder,B44,T,E95D050000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400DD7,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400DDA,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400DDD,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400DE1,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400DE4,_1_stringEncoder,B45,T,C6004A,mov,mov_35,byte ptr [rax],4Ah,3,5,N,,mov,C
+.text,00400DE7,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400DEB,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400DEE,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400DF1,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400DF5,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400DF8,_1_stringEncoder,B45,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00400DFB,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400DFF,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E02,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E05,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E09,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E0C,_1_stringEncoder,B45,T,C60070,mov,mov_35,byte ptr [rax],70h,3,5,N,,mov,C
+.text,00400E0F,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E13,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E16,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E19,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E1D,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E20,_1_stringEncoder,B45,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00400E23,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E27,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E2A,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E2D,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E31,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E34,_1_stringEncoder,B45,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400E37,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E3B,_1_stringEncoder,B45,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E3E,_1_stringEncoder,B45,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E41,_1_stringEncoder,B45,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E45,_1_stringEncoder,B45,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E48,_1_stringEncoder,B45,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400E4B,_1_stringEncoder,B45,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E4F,_1_stringEncoder,B45,T,E9E0040000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400E54,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E57,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E5A,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E5E,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E61,_1_stringEncoder,B46,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00400E64,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E68,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E6B,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E6E,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E72,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E75,_1_stringEncoder,B46,T,C60064,mov,mov_35,byte ptr [rax],64h,3,5,N,,mov,C
+.text,00400E78,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E7C,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E7F,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E82,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E86,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E89,_1_stringEncoder,B46,T,C6006D,mov,mov_35,byte ptr [rax],6Dh,3,5,N,,mov,C
+.text,00400E8C,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400E90,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400E93,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400E96,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400E9A,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400E9D,_1_stringEncoder,B46,T,C60069,mov,mov_35,byte ptr [rax],69h,3,5,N,,mov,C
+.text,00400EA0,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400EA4,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400EA7,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400EAA,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400EAE,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400EB1,_1_stringEncoder,B46,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400EB4,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400EB8,_1_stringEncoder,B46,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400EBB,_1_stringEncoder,B46,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400EBE,_1_stringEncoder,B46,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400EC2,_1_stringEncoder,B46,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400EC5,_1_stringEncoder,B46,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400EC8,_1_stringEncoder,B46,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400ECC,_1_stringEncoder,B46,T,E963040000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400ED1,_1_stringEncoder,B47,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400ED4,_1_stringEncoder,B47,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400ED7,_1_stringEncoder,B47,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400EDB,_1_stringEncoder,B47,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400EDE,_1_stringEncoder,B47,T,C60025,mov,mov_35,byte ptr [rax],25h,3,5,N,,mov,C
+.text,00400EE1,_1_stringEncoder,B47,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400EE5,_1_stringEncoder,B47,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400EE8,_1_stringEncoder,B47,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400EEB,_1_stringEncoder,B47,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400EEF,_1_stringEncoder,B47,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400EF2,_1_stringEncoder,B47,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,00400EF5,_1_stringEncoder,B47,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400EF9,_1_stringEncoder,B47,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400EFC,_1_stringEncoder,B47,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400EFF,_1_stringEncoder,B47,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F03,_1_stringEncoder,B47,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F06,_1_stringEncoder,B47,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00400F09,_1_stringEncoder,B47,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F0D,_1_stringEncoder,B47,T,E922040000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,00400F12,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F15,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F18,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F1C,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F1F,_1_stringEncoder,B48,T,C60045,mov,mov_35,byte ptr [rax],45h,3,5,N,,mov,C
+.text,00400F22,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F26,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F29,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F2C,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F30,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F33,_1_stringEncoder,B48,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00400F36,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F3A,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F3D,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F40,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F44,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F47,_1_stringEncoder,B48,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,00400F4A,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F4E,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F51,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F54,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F58,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F5B,_1_stringEncoder,B48,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00400F5E,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F62,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F65,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F68,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F6C,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F6F,_1_stringEncoder,B48,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400F72,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F76,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F79,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F7C,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F80,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F83,_1_stringEncoder,B48,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400F86,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F8A,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400F8D,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400F90,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400F94,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400F97,_1_stringEncoder,B48,T,C60066,mov,mov_35,byte ptr [rax],66h,3,5,N,,mov,C
+.text,00400F9A,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400F9E,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400FA1,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400FA4,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400FA8,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400FAB,_1_stringEncoder,B48,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00400FAE,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400FB2,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400FB5,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400FB8,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400FBC,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400FBF,_1_stringEncoder,B48,T,C6006F,mov,mov_35,byte ptr [rax],6Fh,3,5,N,,mov,C
+.text,00400FC2,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400FC6,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400FC9,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400FCC,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400FD0,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400FD3,_1_stringEncoder,B48,T,C6006D,mov,mov_35,byte ptr [rax],6Dh,3,5,N,,mov,C
+.text,00400FD6,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400FDA,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400FDD,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400FE0,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400FE4,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400FE7,_1_stringEncoder,B48,T,C6003A,mov,mov_35,byte ptr [rax],3Ah,3,5,N,,mov,C
+.text,00400FEA,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400FEE,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400FF1,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00400FF4,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00400FF8,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400FFB,_1_stringEncoder,B48,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00400FFE,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401002,_1_stringEncoder,B48,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401005,_1_stringEncoder,B48,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401008,_1_stringEncoder,B48,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040100C,_1_stringEncoder,B48,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040100F,_1_stringEncoder,B48,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,00401012,_1_stringEncoder,B48,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401016,_1_stringEncoder,B48,T,E919030000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,0040101B,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040101E,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401021,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401025,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401028,_1_stringEncoder,B49,T,C6006C,mov,mov_35,byte ptr [rax],6Ch,3,5,N,,mov,C
+.text,0040102B,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040102F,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401032,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401035,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401039,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040103C,_1_stringEncoder,B49,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,0040103F,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401043,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401046,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401049,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040104D,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401050,_1_stringEncoder,B49,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,00401053,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401057,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040105A,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040105D,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401061,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401064,_1_stringEncoder,B49,T,C6006D,mov,mov_35,byte ptr [rax],6Dh,3,5,N,,mov,C
+.text,00401067,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040106B,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040106E,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401071,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401075,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401078,_1_stringEncoder,B49,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,0040107B,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040107F,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401082,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401085,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401089,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040108C,_1_stringEncoder,B49,T,C60069,mov,mov_35,byte ptr [rax],69h,3,5,N,,mov,C
+.text,0040108F,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401093,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401096,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401099,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040109D,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004010A0,_1_stringEncoder,B49,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,004010A3,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004010A7,_1_stringEncoder,B49,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004010AA,_1_stringEncoder,B49,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004010AD,_1_stringEncoder,B49,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004010B1,_1_stringEncoder,B49,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004010B4,_1_stringEncoder,B49,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,004010B7,_1_stringEncoder,B49,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004010BB,_1_stringEncoder,B49,T,E974020000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,004010C0,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004010C3,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004010C6,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004010CA,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004010CD,_1_stringEncoder,B50,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,004010D0,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004010D4,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004010D7,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004010DA,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004010DE,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004010E1,_1_stringEncoder,B50,T,C60075,mov,mov_35,byte ptr [rax],75h,3,5,N,,mov,C
+.text,004010E4,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004010E8,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004010EB,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004010EE,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004010F2,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004010F5,_1_stringEncoder,B50,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,004010F8,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004010FC,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004010FF,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401102,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401106,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401109,_1_stringEncoder,B50,T,C60068,mov,mov_35,byte ptr [rax],68h,3,5,N,,mov,C
+.text,0040110C,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401110,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401113,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401116,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040111A,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040111D,_1_stringEncoder,B50,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,00401120,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401124,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401127,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040112A,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040112E,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401131,_1_stringEncoder,B50,T,C60066,mov,mov_35,byte ptr [rax],66h,3,5,N,,mov,C
+.text,00401134,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401138,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040113B,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040113E,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401142,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401145,_1_stringEncoder,B50,T,C60061,mov,mov_35,byte ptr [rax],61h,3,5,N,,mov,C
+.text,00401148,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040114C,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040114F,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401152,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401156,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401159,_1_stringEncoder,B50,T,C60069,mov,mov_35,byte ptr [rax],69h,3,5,N,,mov,C
+.text,0040115C,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401160,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401163,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401166,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040116A,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040116D,_1_stringEncoder,B50,T,C6006C,mov,mov_35,byte ptr [rax],6Ch,3,5,N,,mov,C
+.text,00401170,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401174,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401177,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040117A,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040117E,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401181,_1_stringEncoder,B50,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00401184,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401188,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040118B,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040118E,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401192,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401195,_1_stringEncoder,B50,T,C60064,mov,mov_35,byte ptr [rax],64h,3,5,N,,mov,C
+.text,00401198,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040119C,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040119F,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004011A2,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004011A6,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004011A9,_1_stringEncoder,B50,T,C6002E,mov,mov_35,byte ptr [rax],2Eh,3,5,N,,mov,C
+.text,004011AC,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004011B0,_1_stringEncoder,B50,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004011B3,_1_stringEncoder,B50,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004011B6,_1_stringEncoder,B50,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004011BA,_1_stringEncoder,B50,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004011BD,_1_stringEncoder,B50,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,004011C0,_1_stringEncoder,B50,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004011C4,_1_stringEncoder,B50,T,E96B010000,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,004011C9,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004011CC,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004011CF,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004011D3,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004011D6,_1_stringEncoder,B51,T,C60045,mov,mov_35,byte ptr [rax],45h,3,5,N,,mov,C
+.text,004011D9,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004011DD,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004011E0,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004011E3,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004011E7,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004011EA,_1_stringEncoder,B51,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,004011ED,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004011F1,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004011F4,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004011F7,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004011FB,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004011FE,_1_stringEncoder,B51,T,C60074,mov,mov_35,byte ptr [rax],74h,3,5,N,,mov,C
+.text,00401201,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401205,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401208,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040120B,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040120F,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401212,_1_stringEncoder,B51,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,00401215,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401219,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040121C,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040121F,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401223,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401226,_1_stringEncoder,B51,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,00401229,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040122D,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401230,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401233,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401237,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040123A,_1_stringEncoder,B51,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,0040123D,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401241,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401244,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401247,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040124B,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040124E,_1_stringEncoder,B51,T,C6006E,mov,mov_35,byte ptr [rax],6Eh,3,5,N,,mov,C
+.text,00401251,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401255,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401258,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040125B,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040125F,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401262,_1_stringEncoder,B51,T,C60075,mov,mov_35,byte ptr [rax],75h,3,5,N,,mov,C
+.text,00401265,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401269,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040126C,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,0040126F,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401273,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401276,_1_stringEncoder,B51,T,C6006D,mov,mov_35,byte ptr [rax],6Dh,3,5,N,,mov,C
+.text,00401279,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040127D,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401280,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401283,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401287,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040128A,_1_stringEncoder,B51,T,C60062,mov,mov_35,byte ptr [rax],62h,3,5,N,,mov,C
+.text,0040128D,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401291,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401294,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401297,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,0040129B,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040129E,_1_stringEncoder,B51,T,C60065,mov,mov_35,byte ptr [rax],65h,3,5,N,,mov,C
+.text,004012A1,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004012A5,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004012A8,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004012AB,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004012AF,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004012B2,_1_stringEncoder,B51,T,C60072,mov,mov_35,byte ptr [rax],72h,3,5,N,,mov,C
+.text,004012B5,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004012B9,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004012BC,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004012BF,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004012C3,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004012C6,_1_stringEncoder,B51,T,C6003A,mov,mov_35,byte ptr [rax],3Ah,3,5,N,,mov,C
+.text,004012C9,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004012CD,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004012D0,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004012D3,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004012D7,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004012DA,_1_stringEncoder,B51,T,C60020,mov,mov_35,byte ptr [rax],20h,3,5,N,,mov,C
+.text,004012DD,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004012E1,_1_stringEncoder,B51,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004012E4,_1_stringEncoder,B51,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004012E7,_1_stringEncoder,B51,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,004012EB,_1_stringEncoder,B51,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,004012EE,_1_stringEncoder,B51,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,004012F1,_1_stringEncoder,B51,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,004012F5,_1_stringEncoder,B51,T,EB3D,jmp,jmp_70,loc_401334,,7,0,J,.CODE,jmp.CODE,C
+.text,004012F7,_1_stringEncoder,B52,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,004012FA,_1_stringEncoder,B52,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,004012FD,_1_stringEncoder,B52,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401301,_1_stringEncoder,B52,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401304,_1_stringEncoder,B52,T,C60025,mov,mov_35,byte ptr [rax],25h,3,5,N,,mov,C
+.text,00401307,_1_stringEncoder,B52,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040130B,_1_stringEncoder,B52,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,0040130E,_1_stringEncoder,B52,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401311,_1_stringEncoder,B52,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401315,_1_stringEncoder,B52,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00401318,_1_stringEncoder,B52,T,C60073,mov,mov_35,byte ptr [rax],73h,3,5,N,,mov,C
+.text,0040131B,_1_stringEncoder,B52,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,0040131F,_1_stringEncoder,B52,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00401322,_1_stringEncoder,B52,T,4863D0,movsxd,movsxd_11,rdx,eax,1,1,N,,movsxd,C
+.text,00401325,_1_stringEncoder,B52,T,488B45E0,mov,mov_14,rax,[rbp+var_20],1,4,N,,mov,C
+.text,00401329,_1_stringEncoder,B52,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,0040132C,_1_stringEncoder,B52,T,C60000,mov,mov_35,byte ptr [rax],0,3,5,N,,mov,C
+.text,0040132F,_1_stringEncoder,B52,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00401333,_1_stringEncoder,B52,T,90,nop,nop_00,,,0,0,N,,nop,C
+.text,00401334,_1_stringEncoder,B53,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00401335,_1_stringEncoder,B53,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00401336,encodeStrings_litStr1_i$nit,B54,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00401337,encodeStrings_litStr1_i$nit,B54,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040133A,encodeStrings_litStr1_i$nit,B54,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,0040133B,encodeStrings_litStr1_i$nit,B54,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,0040133C,encodeStrings_litStr4_i$nit,B55,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,0040133D,encodeStrings_litStr4_i$nit,B55,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00401340,encodeStrings_litStr4_i$nit,B55,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00401341,encodeStrings_litStr4_i$nit,B55,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00401342,encodeStrings_litStr7_i$nit,B56,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00401343,encodeStrings_litStr7_i$nit,B56,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00401346,encodeStrings_litStr7_i$nit,B56,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00401347,encodeStrings_litStr7_i$nit,B56,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00401348,encodeStrings_litStr11_i$nit,B57,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00401349,encodeStrings_litStr11_i$nit,B57,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040134C,encodeStrings_litStr11_i$nit,B57,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,0040134D,encodeStrings_litStr11_i$nit,B57,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00401350,__libc_csu_init,B58,T,4157,push,push_10,r15,,1,0,N,,push,S
+.text,00401352,__libc_csu_init,B58,T,4189FF,mov,mov_11,r15d,edi,1,1,N,,mov,C
+.text,00401355,__libc_csu_init,B58,T,4156,push,push_10,r14,,1,0,N,,push,C
+.text,00401357,__libc_csu_init,B58,T,4989F6,mov,mov_11,r14,rsi,1,1,N,,mov,C
+.text,0040135A,__libc_csu_init,B58,T,4155,push,push_10,r13,,1,0,N,,push,C
+.text,0040135C,__libc_csu_init,B58,T,4989D5,mov,mov_11,r13,rdx,1,1,N,,mov,C
+.text,0040135F,__libc_csu_init,B58,T,4154,push,push_10,r12,,1,0,N,,push,C
+.text,00401361,__libc_csu_init,B58,T,4C8D25B0042000,lea,lea_12,r12,__frame_dummy_init_array_entry,1,2,N,_r.DATA,lea_r.DATA,C
+.text,00401368,__libc_csu_init,B58,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,00401369,__libc_csu_init,B58,T,488D2DB0042000,lea,lea_12,rbp,__do_global_dtors_aux_fini_array_entry,1,2,N,_r.DATA,lea_r.DATA,C
+.text,00401370,__libc_csu_init,B58,T,53,push,push_10,rbx,,1,0,N,,push,C
+.text,00401371,__libc_csu_init,B58,T,4C29E5,sub,sub_11,rbp,r12,1,1,N,,sub,C
+.text,00401374,__libc_csu_init,B58,T,31DB,xor,xor_11,ebx,ebx,1,1,N,,xor,C
+.text,00401376,__libc_csu_init,B58,T,48C1FD03,sar,sar_15,rbp,3,1,5,N,,sar,C
+.text,0040137A,__libc_csu_init,B58,T,4883EC08,sub,sub_15,rsp,8,1,5,N,,sub,C
+.text,0040137E,__libc_csu_init,B58,T,E82DF1FFFF,call,call_70,_init_proc,,7,0,J,.CODE,call.CODE,C
+.text,00401383,__libc_csu_init,B58,T,4885ED,test,test_11,rbp,rbp,1,1,N,,test,C
+.text,00401386,__libc_csu_init,B58,T,741E,jz,jz_70,loc_4013A6,,7,0,J,.CODE,jz.CODE,C
+.text,00401388,__libc_csu_init,B59,T,0F1F840000000000,nop,nop_40,dword ptr [rax+rax+00000000h],,4,0,N,,nop,C
+.text,00401390,__libc_csu_init,B60,T,4C89EA,mov,mov_11,rdx,r13,1,1,N,,mov,C
+.text,00401393,__libc_csu_init,B60,T,4C89F6,mov,mov_11,rsi,r14,1,1,N,,mov,C
+.text,00401396,__libc_csu_init,B60,T,4489FF,mov,mov_11,edi,r15d,1,1,N,,mov,C
+.text,00401399,__libc_csu_init,B60,T,41FF14DC,call,call_30,qword ptr [r12+rbx*8],,3,0,J,,call,C
+.text,0040139D,__libc_csu_init,B60,T,4883C301,add,add_15,rbx,1,1,5,N,,add,C
+.text,004013A1,__libc_csu_init,B60,T,4839EB,cmp,cmp_11,rbx,rbp,1,1,N,,cmp,C
+.text,004013A4,__libc_csu_init,B60,T,75EA,jnz,jnz_70,loc_401390,,7,0,J,.CODE,jnz.CODE,C
+.text,004013A6,__libc_csu_init,B61,T,4883C408,add,add_15,rsp,8,1,5,N,,add,C
+.text,004013AA,__libc_csu_init,B61,T,5B,pop,pop_10,rbx,,1,0,N,,pop,C
+.text,004013AB,__libc_csu_init,B61,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004013AC,__libc_csu_init,B61,T,415C,pop,pop_10,r12,,1,0,N,,pop,C
+.text,004013AE,__libc_csu_init,B61,T,415D,pop,pop_10,r13,,1,0,N,,pop,C
+.text,004013B0,__libc_csu_init,B61,T,415E,pop,pop_10,r14,,1,0,N,,pop,C
+.text,004013B2,__libc_csu_init,B61,T,415F,pop,pop_10,r15,,1,0,N,,pop,C
+.text,004013B4,__libc_csu_init,B61,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004013C0,__libc_csu_fini,B62,T,F3C3,retn,retn_00,,,0,0,N,,retn,S
