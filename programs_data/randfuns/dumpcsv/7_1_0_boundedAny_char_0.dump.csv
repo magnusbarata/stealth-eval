@@ -1,0 +1,342 @@
+.text,00400630,_start,B0,T,31ED,xor,xor_11,ebp,ebp,1,1,N,,xor,S
+.text,00400632,_start,B0,T,4989D1,mov,mov_11,r9,rdx,1,1,N,,mov,C
+.text,00400635,_start,B0,T,5E,pop,pop_10,rsi,,1,0,N,,pop,C
+.text,00400636,_start,B0,T,4889E2,mov,mov_11,rdx,rsp,1,1,N,,mov,C
+.text,00400639,_start,B0,T,4883E4F0,and,and_15,rsp,0FFFFFFFFFFFFFFF0h,1,5,N,,and,C
+.text,0040063D,_start,B0,T,50,push,push_10,rax,,1,0,N,,push,C
+.text,0040063E,_start,B0,T,54,push,push_10,rsp,,1,0,N,,push,C
+.text,0040063F,_start,B0,T,49C7C0500B4000,mov,mov_15,r8,offset __libc_csu_fini,1,5,N,_r.CODE,mov_r.CODE,C
+.text,00400646,_start,B0,T,48C7C1E00A4000,mov,mov_15,rcx,offset __libc_csu_init,1,5,N,_r.CODE,mov_r.CODE,C
+.text,0040064D,_start,B0,T,48C7C7F6094000,mov,mov_15,rdi,offset main,1,5,N,_r.CODE,mov_r.CODE,C
+.text,00400654,_start,B0,T,E887FFFFFF,call,call_70,___libc_start_main,,7,0,J,.CODE,call.CODE,C
+.text,00400659,_start,B0,T,F4,hlt,hlt_00,,,0,0,N,,hlt,C
+.text,00400660,deregister_tm_clones,B1,T,B8870F6000,mov,mov_15,eax,offset unk_600F87,1,5,N,_r.BSS,mov_r.BSS,S
+.text,00400665,deregister_tm_clones,B1,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,00400666,deregister_tm_clones,B1,T,482D800F6000,sub,sub_15,rax,offset __bss_start,1,5,N,_r.BSS,sub_r.BSS,C
+.text,0040066C,deregister_tm_clones,B1,T,4883F80E,cmp,cmp_15,rax,0Eh,1,5,N,,cmp,C
+.text,00400670,deregister_tm_clones,B1,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,00400673,deregister_tm_clones,B1,T,761B,jbe,jbe_70,loc_400690,,7,0,J,.CODE,jbe.CODE,C
+.text,00400675,deregister_tm_clones,B2,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,0040067A,deregister_tm_clones,B2,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,0040067D,deregister_tm_clones,B2,T,7411,jz,jz_70,loc_400690,,7,0,J,.CODE,jz.CODE,C
+.text,0040067F,deregister_tm_clones,B3,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400680,deregister_tm_clones,B3,T,BF800F6000,mov,mov_15,edi,offset __bss_start,1,5,N,_r.BSS,mov_r.BSS,C
+.text,00400685,deregister_tm_clones,B3,T,FFE0,jmp,jmp_10,rax,,1,0,J,,jmp,C
+.text,00400690,deregister_tm_clones,B4,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400691,deregister_tm_clones,B4,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006A0,register_tm_clones,B5,T,BE800F6000,mov,mov_15,esi,offset __bss_start,1,5,N,_r.BSS,mov_r.BSS,S
+.text,004006A5,register_tm_clones,B5,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,004006A6,register_tm_clones,B5,T,4881EE800F6000,sub,sub_15,rsi,offset __bss_start,1,5,N,_r.BSS,sub_r.BSS,C
+.text,004006AD,register_tm_clones,B5,T,48C1FE03,sar,sar_15,rsi,3,1,5,N,,sar,C
+.text,004006B1,register_tm_clones,B5,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006B4,register_tm_clones,B5,T,4889F0,mov,mov_11,rax,rsi,1,1,N,,mov,C
+.text,004006B7,register_tm_clones,B5,T,48C1E83F,shr,shr_15,rax,3Fh,1,5,N,,shr,C
+.text,004006BB,register_tm_clones,B5,T,4801C6,add,add_11,rsi,rax,1,1,N,,add,C
+.text,004006BE,register_tm_clones,B5,T,48D1FE,sar,sar_15,rsi,1,1,5,N,,sar,C
+.text,004006C1,register_tm_clones,B5,T,7415,jz,jz_70,loc_4006D8,,7,0,J,.CODE,jz.CODE,C
+.text,004006C3,register_tm_clones,B6,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004006C8,register_tm_clones,B6,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,004006CB,register_tm_clones,B6,T,740B,jz,jz_70,loc_4006D8,,7,0,J,.CODE,jz.CODE,C
+.text,004006CD,register_tm_clones,B7,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006CE,register_tm_clones,B7,T,BF800F6000,mov,mov_15,edi,offset __bss_start,1,5,N,_r.BSS,mov_r.BSS,C
+.text,004006D3,register_tm_clones,B7,T,FFE0,jmp,jmp_10,rax,,1,0,J,,jmp,C
+.text,004006D8,register_tm_clones,B8,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006D9,register_tm_clones,B8,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004006E0,__do_global_dtors_aux,B9,T,803D9908200000,cmp,cmp_25,cs:__bss_start,0,2,5,N,_r.BSS,cmp_r.BSS,S
+.text,004006E7,__do_global_dtors_aux,B9,T,7511,jnz,jnz_70,locret_4006FA,,7,0,J,.CODE,jnz.CODE,C
+.text,004006E9,__do_global_dtors_aux,B10,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,004006EA,__do_global_dtors_aux,B10,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004006ED,__do_global_dtors_aux,B10,T,E86EFFFFFF,call,call_70,deregister_tm_clones,,7,0,J,.CODE,call.CODE,C
+.text,004006F2,__do_global_dtors_aux,B10,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,004006F3,__do_global_dtors_aux,B10,T,C6058608200001,mov,mov_25,cs:__bss_start,1,2,5,N,_w.BSS,mov_w.BSS,C
+.text,004006FA,__do_global_dtors_aux,B11,T,F3C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400700,frame_dummy,B12,T,BF280D6000,mov,mov_15,edi,offset __JCR_LIST__,1,5,N,_r.DATA,mov_r.DATA,S
+.text,00400705,frame_dummy,B12,T,48833F00,cmp,cmp_35,qword ptr [rdi],0,3,5,N,,cmp,C
+.text,00400709,frame_dummy,B12,T,7505,jnz,jnz_70,loc_400710,,7,0,J,.CODE,jnz.CODE,C
+.text,0040070B,frame_dummy,B13,T,EB93,jmp,jmp_70,register_tm_clones,,7,0,J,.CODE,jmp.CODE,C
+.text,00400710,frame_dummy,B14,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400715,frame_dummy,B14,T,4885C0,test,test_11,rax,rax,1,1,N,,test,C
+.text,00400718,frame_dummy,B14,T,74F1,jz,jz_70,loc_40070B,,7,0,J,.CODE,jz.CODE,C
+.text,0040071A,frame_dummy,B15,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,0040071B,frame_dummy,B15,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040071E,frame_dummy,B15,T,FFD0,call,call_10,rax,,1,0,J,,call,C
+.text,00400720,frame_dummy,B15,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400721,frame_dummy,B15,T,E97AFFFFFF,jmp,jmp_70,register_tm_clones,,7,0,J,.CODE,jmp.CODE,C
+.text,00400726,function_1,B16,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,00400727,function_1,B16,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,0040072A,function_1,B16,T,4881ECC0000000,sub,sub_15,rsp,0C0h,1,5,N,,sub,C
+.text,00400731,function_1,B16,T,4889BD48FFFFFF,mov,mov_41,[rbp+var_B8],rdi,4,1,N,,mov,C
+.text,00400738,function_1,B16,T,4889B540FFFFFF,mov,mov_41,[rbp+var_C0],rsi,4,1,N,,mov,C
+.text,0040073F,function_1,B16,T,48C78570FFFFFF00000000,mov,mov_45,qword ptr [rbp+s1],0,4,5,N,,mov,C
+.text,0040074A,function_1,B16,T,488D9578FFFFFF,lea,lea_14,rdx,[rbp+var_88],1,4,N,,lea,C
+.text,00400751,function_1,B16,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400756,function_1,B16,T,B90B000000,mov,mov_15,ecx,0Bh,1,5,N,,mov,C
+.text,0040075B,function_1,B16,T,4889D7,mov,mov_11,rdi,rdx,1,1,N,,mov,C
+.text,0040075E,function_1,B16,T,F348AB,stosq,stosq_31,,,3,1,N,,stosq,C
+.text,00400761,function_1,B16,T,4889FA,mov,mov_11,rdx,rdi,1,1,N,,mov,C
+.text,00400764,function_1,B16,T,8902,mov,mov_31,[rdx],eax,3,1,N,,mov,C
+.text,00400766,function_1,B16,T,4883C204,add,add_15,rdx,4,1,5,N,,add,C
+.text,0040076A,function_1,B16,T,C745FC00000000,mov,mov_45,[rbp+var_4],0,4,5,N,,mov,C
+.text,00400771,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,00400778,function_1,B16,T,4883C002,add,add_15,rax,2,1,5,N,,add,C
+.text,0040077C,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,0040077F,function_1,B16,T,83E86C,sub,sub_15,eax,6Ch,1,5,N,,sub,C
+.text,00400782,function_1,B16,T,8845E0,mov,mov_41,[rbp+var_20],al,4,1,N,,mov,C
+.text,00400785,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,0040078C,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,0040078F,function_1,B16,T,0FB64DE0,movzx,movzx_14,ecx,[rbp+var_20],1,4,N,,movzx,C
+.text,00400793,function_1,B16,T,488B9548FFFFFF,mov,mov_14,rdx,[rbp+var_B8],1,4,N,,mov,C
+.text,0040079A,function_1,B16,T,4883C203,add,add_15,rdx,3,1,5,N,,add,C
+.text,0040079E,function_1,B16,T,0FB612,movzx,movzx_13,edx,byte ptr [rdx],1,3,N,,movzx,C
+.text,004007A1,function_1,B16,T,01CA,add,add_11,edx,ecx,1,1,N,,add,C
+.text,004007A3,function_1,B16,T,01D0,add,add_11,eax,edx,1,1,N,,add,C
+.text,004007A5,function_1,B16,T,8845E1,mov,mov_41,[rbp+var_1F],al,4,1,N,,mov,C
+.text,004007A8,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004007AF,function_1,B16,T,4883C001,add,add_15,rax,1,1,5,N,,add,C
+.text,004007B3,function_1,B16,T,0FB610,movzx,movzx_13,edx,byte ptr [rax],1,3,N,,movzx,C
+.text,004007B6,function_1,B16,T,0FB645E1,movzx,movzx_14,eax,[rbp+var_1F],1,4,N,,movzx,C
+.text,004007BA,function_1,B16,T,01D0,add,add_11,eax,edx,1,1,N,,add,C
+.text,004007BC,function_1,B16,T,83C03E,add,add_15,eax,3Eh,1,5,N,,add,C
+.text,004007BF,function_1,B16,T,8845E2,mov,mov_41,[rbp+var_1E],al,4,1,N,,mov,C
+.text,004007C2,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004007C9,function_1,B16,T,4883C002,add,add_15,rax,2,1,5,N,,add,C
+.text,004007CD,function_1,B16,T,0FB610,movzx,movzx_13,edx,byte ptr [rax],1,3,N,,movzx,C
+.text,004007D0,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004007D7,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,004007DA,function_1,B16,T,01D0,add,add_11,eax,edx,1,1,N,,add,C
+.text,004007DC,function_1,B16,T,83E83C,sub,sub_15,eax,3Ch,1,5,N,,sub,C
+.text,004007DF,function_1,B16,T,8845E3,mov,mov_41,[rbp+var_1D],al,4,1,N,,mov,C
+.text,004007E2,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004007E9,function_1,B16,T,4883C003,add,add_15,rax,3,1,5,N,,add,C
+.text,004007ED,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,004007F0,function_1,B16,T,83E853,sub,sub_15,eax,53h,1,5,N,,sub,C
+.text,004007F3,function_1,B16,T,8845E4,mov,mov_41,[rbp+var_1C],al,4,1,N,,mov,C
+.text,004007F6,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004007FD,function_1,B16,T,4883C001,add,add_15,rax,1,1,5,N,,add,C
+.text,00400801,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,00400804,function_1,B16,T,83E877,sub,sub_15,eax,77h,1,5,N,,sub,C
+.text,00400807,function_1,B16,T,8845E5,mov,mov_41,[rbp+var_1B],al,4,1,N,,mov,C
+.text,0040080A,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,00400811,function_1,B16,T,4883C002,add,add_15,rax,2,1,5,N,,add,C
+.text,00400815,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,00400818,function_1,B16,T,83E83F,sub,sub_15,eax,3Fh,1,5,N,,sub,C
+.text,0040081B,function_1,B16,T,8845E6,mov,mov_41,[rbp+var_1A],al,4,1,N,,mov,C
+.text,0040081E,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,00400825,function_1,B16,T,0FB610,movzx,movzx_13,edx,byte ptr [rax],1,3,N,,movzx,C
+.text,00400828,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,0040082F,function_1,B16,T,4883C003,add,add_15,rax,3,1,5,N,,add,C
+.text,00400833,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,00400836,function_1,B16,T,8D0C02,lea,lea_13,ecx,[rdx+rax],1,3,N,,lea,C
+.text,00400839,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,00400840,function_1,B16,T,4883C001,add,add_15,rax,1,1,5,N,,add,C
+.text,00400844,function_1,B16,T,0FB610,movzx,movzx_13,edx,byte ptr [rax],1,3,N,,movzx,C
+.text,00400847,function_1,B16,T,0FB645E6,movzx,movzx_14,eax,[rbp+var_1A],1,4,N,,movzx,C
+.text,0040084B,function_1,B16,T,01D0,add,add_11,eax,edx,1,1,N,,add,C
+.text,0040084D,function_1,B16,T,01C8,add,add_11,eax,ecx,1,1,N,,add,C
+.text,0040084F,function_1,B16,T,83C06E,add,add_15,eax,6Eh,1,5,N,,add,C
+.text,00400852,function_1,B16,T,8845E7,mov,mov_41,[rbp+var_19],al,4,1,N,,mov,C
+.text,00400855,function_1,B16,T,488D8560FFFFFF,lea,lea_14,rax,[rbp+tv],1,4,N,,lea,C
+.text,0040085C,function_1,B16,T,BE00000000,mov,mov_15,esi,0,1,5,N,,mov,C
+.text,00400861,function_1,B16,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,00400864,function_1,B16,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400869,function_1,B16,T,E862FDFFFF,call,call_70,_gettimeofday,,7,0,J,.CODE,call.CODE,C
+.text,0040086E,function_1,B16,T,8945F8,mov,mov_41,[rbp+var_8],eax,4,1,N,,mov,C
+.text,00400871,function_1,B16,T,488B8560FFFFFF,mov,mov_14,rax,[rbp+tv.tv_sec],1,4,N,_r.UNK,mov_r.UNK,C
+.text,00400878,function_1,B16,T,488B9568FFFFFF,mov,mov_14,rdx,[rbp+tv.tv_usec],1,4,N,_r.UNK,mov_r.UNK,C
+.text,0040087F,function_1,B16,T,48898550FFFFFF,mov,mov_41,[rbp+var_B0],rax,4,1,N,,mov,C
+.text,00400886,function_1,B16,T,48899558FFFFFF,mov,mov_41,[rbp+var_A8],rdx,4,1,N,,mov,C
+.text,0040088D,function_1,B16,T,488B8550FFFFFF,mov,mov_14,rax,[rbp+var_B0],1,4,N,,mov,C
+.text,00400894,function_1,B16,T,488945F0,mov,mov_41,[rbp+var_10],rax,4,1,N,,mov,C
+.text,00400898,function_1,B16,T,BF680B4000,mov,mov_15,edi,offset format,1,5,N,_r.DATA,mov_r.DATA,C
+.text,0040089D,function_1,B16,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004008A2,function_1,B16,T,E819FDFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,004008A7,function_1,B16,T,488D8570FFFFFF,lea,lea_14,rax,[rbp+s1],1,4,N,,lea,C
+.text,004008AE,function_1,B16,T,4889C6,mov,mov_11,rsi,rax,1,1,N,,mov,C
+.text,004008B1,function_1,B16,T,BF7F0B4000,mov,mov_15,edi,offset aS,1,5,N,_r.DATA,mov_r.DATA,C
+.text,004008B6,function_1,B16,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,004008BB,function_1,B16,T,E850FDFFFF,call,call_70,___isoc99_scanf,,7,0,J,.CODE,call.CODE,C
+.text,004008C0,function_1,B16,T,488B8548FFFFFF,mov,mov_14,rax,[rbp+var_B8],1,4,N,,mov,C
+.text,004008C7,function_1,B16,T,0FB600,movzx,movzx_13,eax,byte ptr [rax],1,3,N,,movzx,C
+.text,004008CA,function_1,B16,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,004008CD,function_1,B16,T,8945EC,mov,mov_41,[rbp+var_14],eax,4,1,N,,mov,C
+.text,004008D0,function_1,B16,T,488D8570FFFFFF,lea,lea_14,rax,[rbp+s1],1,4,N,,lea,C
+.text,004008D7,function_1,B16,T,BA64000000,mov,mov_15,edx,64h,1,5,N,,mov,C
+.text,004008DC,function_1,B16,T,BE820B4000,mov,mov_15,esi,offset s2,1,5,N,_r.DATA,mov_r.DATA,C
+.text,004008E1,function_1,B16,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,004008E4,function_1,B16,T,E8B7FCFFFF,call,call_70,_strncmp,,7,0,J,.CODE,call.CODE,C
+.text,004008E9,function_1,B16,T,8945E8,mov,mov_41,[rbp+var_18],eax,4,1,N,,mov,C
+.text,004008EC,function_1,B16,T,837DE800,cmp,cmp_45,[rbp+var_18],0,4,5,N,,cmp,C
+.text,004008F0,function_1,B16,T,0F95C0,setnz,setnz_10,al,,1,0,N,,setnz,C
+.text,004008F3,function_1,B16,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,004008F6,function_1,B16,T,0945FC,or,or_41,[rbp+var_4],eax,4,1,N,,or,C
+.text,004008F9,function_1,B16,T,488B45F0,mov,mov_14,rax,[rbp+var_10],1,4,N,,mov,C
+.text,004008FD,function_1,B16,T,483D78645D53,cmp,cmp_15,rax,535D6478h,1,5,N,,cmp,C
+.text,00400903,function_1,B16,T,0F96C0,setbe,setbe_10,al,,1,0,N,,setbe,C
+.text,00400906,function_1,B16,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400909,function_1,B16,T,0945FC,or,or_41,[rbp+var_4],eax,4,1,N,,or,C
+.text,0040090C,function_1,B16,T,837DEC2A,cmp,cmp_45,[rbp+var_14],2Ah,4,5,N,,cmp,C
+.text,00400910,function_1,B16,T,0F95C0,setnz,setnz_10,al,,1,0,N,,setnz,C
+.text,00400913,function_1,B16,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400916,function_1,B16,T,0945FC,or,or_41,[rbp+var_4],eax,4,1,N,,or,C
+.text,00400919,function_1,B16,T,837DFC00,cmp,cmp_45,[rbp+var_4],0,4,5,N,,cmp,C
+.text,0040091D,function_1,B16,T,7405,jz,jz_70,loc_400924,,7,0,J,.CODE,jz.CODE,C
+.text,0040091F,function_1,B17,T,E86CFCFFFF,call,call_70,_abort,,7,0,J,.CODE,call.CODE,C
+.text,00400924,function_1,B18,T,0FB645E0,movzx,movzx_14,eax,[rbp+var_20],1,4,N,,movzx,C
+.text,00400928,function_1,B18,T,0FB6D0,movzx,movzx_11,edx,al,1,1,N,,movzx,C
+.text,0040092B,function_1,B18,T,0FB645E1,movzx,movzx_14,eax,[rbp+var_1F],1,4,N,,movzx,C
+.text,0040092F,function_1,B18,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400932,function_1,B18,T,8D0C02,lea,lea_13,ecx,[rdx+rax],1,3,N,,lea,C
+.text,00400935,function_1,B18,T,0FB645E2,movzx,movzx_14,eax,[rbp+var_1E],1,4,N,,movzx,C
+.text,00400939,function_1,B18,T,0FB6D0,movzx,movzx_11,edx,al,1,1,N,,movzx,C
+.text,0040093C,function_1,B18,T,0FB645E3,movzx,movzx_14,eax,[rbp+var_1D],1,4,N,,movzx,C
+.text,00400940,function_1,B18,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400943,function_1,B18,T,29C2,sub,sub_11,edx,eax,1,1,N,,sub,C
+.text,00400945,function_1,B18,T,89D0,mov,mov_11,eax,edx,1,1,N,,mov,C
+.text,00400947,function_1,B18,T,01C1,add,add_11,ecx,eax,1,1,N,,add,C
+.text,00400949,function_1,B18,T,0FB645E4,movzx,movzx_14,eax,[rbp+var_1C],1,4,N,,movzx,C
+.text,0040094D,function_1,B18,T,0FB6D0,movzx,movzx_11,edx,al,1,1,N,,movzx,C
+.text,00400950,function_1,B18,T,0FB645E5,movzx,movzx_14,eax,[rbp+var_1B],1,4,N,,movzx,C
+.text,00400954,function_1,B18,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400957,function_1,B18,T,8D3402,lea,lea_13,esi,[rdx+rax],1,3,N,,lea,C
+.text,0040095A,function_1,B18,T,0FB645E6,movzx,movzx_14,eax,[rbp+var_1A],1,4,N,,movzx,C
+.text,0040095E,function_1,B18,T,0FB6D0,movzx,movzx_11,edx,al,1,1,N,,movzx,C
+.text,00400961,function_1,B18,T,0FB645E7,movzx,movzx_14,eax,[rbp+var_19],1,4,N,,movzx,C
+.text,00400965,function_1,B18,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400968,function_1,B18,T,29C2,sub,sub_11,edx,eax,1,1,N,,sub,C
+.text,0040096A,function_1,B18,T,89D0,mov,mov_11,eax,edx,1,1,N,,mov,C
+.text,0040096C,function_1,B18,T,01F0,add,add_11,eax,esi,1,1,N,,add,C
+.text,0040096E,function_1,B18,T,39C1,cmp,cmp_11,ecx,eax,1,1,N,,cmp,C
+.text,00400970,function_1,B18,T,7511,jnz,jnz_70,loc_400983,,7,0,J,.CODE,jnz.CODE,C
+.text,00400972,function_1,B19,T,0FB655E1,movzx,movzx_14,edx,[rbp+var_1F],1,4,N,,movzx,C
+.text,00400976,function_1,B19,T,0FB645E6,movzx,movzx_14,eax,[rbp+var_1A],1,4,N,,movzx,C
+.text,0040097A,function_1,B19,T,29C2,sub,sub_11,edx,eax,1,1,N,,sub,C
+.text,0040097C,function_1,B19,T,89D0,mov,mov_11,eax,edx,1,1,N,,mov,C
+.text,0040097E,function_1,B19,T,8845E5,mov,mov_41,[rbp+var_1B],al,4,1,N,,mov,C
+.text,00400981,function_1,B19,T,EB0D,jmp,jmp_70,loc_400990,,7,0,J,.CODE,jmp.CODE,C
+.text,00400983,function_1,B20,T,0FB655E0,movzx,movzx_14,edx,[rbp+var_20],1,4,N,,movzx,C
+.text,00400987,function_1,B20,T,0FB645E5,movzx,movzx_14,eax,[rbp+var_1B],1,4,N,,movzx,C
+.text,0040098B,function_1,B20,T,01D0,add,add_11,eax,edx,1,1,N,,add,C
+.text,0040098D,function_1,B20,T,8845E7,mov,mov_41,[rbp+var_19],al,4,1,N,,mov,C
+.text,00400990,function_1,B21,T,0FB645E5,movzx,movzx_14,eax,[rbp+var_1B],1,4,N,,movzx,C
+.text,00400994,function_1,B21,T,8D5094,lea,lea_14,edx,[rax-6Ch],1,4,N,,lea,C
+.text,00400997,function_1,B21,T,488B8540FFFFFF,mov,mov_14,rax,[rbp+var_C0],1,4,N,,mov,C
+.text,0040099E,function_1,B21,T,8810,mov,mov_31,[rax],dl,3,1,N,,mov,C
+.text,004009A0,function_1,B21,T,488B8540FFFFFF,mov,mov_14,rax,[rbp+var_C0],1,4,N,,mov,C
+.text,004009A7,function_1,B21,T,4883C001,add,add_15,rax,1,1,5,N,,add,C
+.text,004009AB,function_1,B21,T,0FB655E2,movzx,movzx_14,edx,[rbp+var_1E],1,4,N,,movzx,C
+.text,004009AF,function_1,B21,T,83C216,add,add_15,edx,16h,1,5,N,,add,C
+.text,004009B2,function_1,B21,T,8810,mov,mov_31,[rax],dl,3,1,N,,mov,C
+.text,004009B4,function_1,B21,T,488B8540FFFFFF,mov,mov_14,rax,[rbp+var_C0],1,4,N,,mov,C
+.text,004009BB,function_1,B21,T,4883C002,add,add_15,rax,2,1,5,N,,add,C
+.text,004009BF,function_1,B21,T,0FB655E7,movzx,movzx_14,edx,[rbp+var_19],1,4,N,,movzx,C
+.text,004009C3,function_1,B21,T,83C280,add,add_15,edx,0FFFFFF80h,1,5,N,,add,C
+.text,004009C6,function_1,B21,T,8810,mov,mov_31,[rax],dl,3,1,N,,mov,C
+.text,004009C8,function_1,B21,T,488B8540FFFFFF,mov,mov_14,rax,[rbp+var_C0],1,4,N,,mov,C
+.text,004009CF,function_1,B21,T,4883C003,add,add_15,rax,3,1,5,N,,add,C
+.text,004009D3,function_1,B21,T,0FB64DE4,movzx,movzx_14,ecx,[rbp+var_1C],1,4,N,,movzx,C
+.text,004009D7,function_1,B21,T,0FB655E3,movzx,movzx_14,edx,[rbp+var_1D],1,4,N,,movzx,C
+.text,004009DB,function_1,B21,T,8D3411,lea,lea_13,esi,[rcx+rdx],1,3,N,,lea,C
+.text,004009DE,function_1,B21,T,0FB64DE1,movzx,movzx_14,ecx,[rbp+var_1F],1,4,N,,movzx,C
+.text,004009E2,function_1,B21,T,0FB655E6,movzx,movzx_14,edx,[rbp+var_1A],1,4,N,,movzx,C
+.text,004009E6,function_1,B21,T,01D1,add,add_11,ecx,edx,1,1,N,,add,C
+.text,004009E8,function_1,B21,T,0FB655E0,movzx,movzx_14,edx,[rbp+var_20],1,4,N,,movzx,C
+.text,004009EC,function_1,B21,T,29D1,sub,sub_11,ecx,edx,1,1,N,,sub,C
+.text,004009EE,function_1,B21,T,89CA,mov,mov_11,edx,ecx,1,1,N,,mov,C
+.text,004009F0,function_1,B21,T,01F2,add,add_11,edx,esi,1,1,N,,add,C
+.text,004009F2,function_1,B21,T,8810,mov,mov_31,[rax],dl,3,1,N,,mov,C
+.text,004009F4,function_1,B21,T,C9,leave,leave_00,,,0,0,N,,leave,C
+.text,004009F5,function_1,B21,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,004009F6,main,B22,T,55,push,push_10,rbp,,1,0,N,,push,S
+.text,004009F7,main,B22,T,4889E5,mov,mov_11,rbp,rsp,1,1,N,,mov,C
+.text,004009FA,main,B22,T,4883EC30,sub,sub_15,rsp,30h,1,5,N,,sub,C
+.text,004009FE,main,B22,T,897DDC,mov,mov_41,[rbp+var_24],edi,4,1,N,,mov,C
+.text,00400A01,main,B22,T,488975D0,mov,mov_41,[rbp+var_30],rsi,4,1,N,,mov,C
+.text,00400A05,main,B22,T,837DDC05,cmp,cmp_45,[rbp+var_24],5,4,5,N,,cmp,C
+.text,00400A09,main,B22,T,741E,jz,jz_70,loc_400A29,,7,0,J,.CODE,jz.CODE,C
+.text,00400A0B,main,B23,T,BE04000000,mov,mov_15,esi,4,1,5,N,,mov,C
+.text,00400A10,main,B23,T,BF900B4000,mov,mov_15,edi,offset aCallThisProgra,1,5,N,_r.DATA,mov_r.DATA,C
+.text,00400A15,main,B23,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400A1A,main,B23,T,E8A1FBFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,00400A1F,main,B23,T,BFFFFFFFFF,mov,mov_15,edi,0FFFFFFFFh,1,5,N,,mov,C
+.text,00400A24,main,B23,T,E8F7FBFFFF,call,call_70,_exit,,7,0,J,.CODE,call.CODE,C
+.text,00400A29,main,B24,T,C745FC00000000,mov,mov_45,[rbp+var_4],0,4,5,N,,mov,C
+.text,00400A30,main,B24,T,EB41,jmp,jmp_70,loc_400A73,,7,0,J,.CODE,jmp.CODE,C
+.text,00400A32,main,B25,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A35,main,B25,T,4898,cdqe,cdqe_10,,,1,0,N,,cdqe,C
+.text,00400A37,main,B25,T,4883C001,add,add_15,rax,1,1,5,N,,add,C
+.text,00400A3B,main,B25,T,488D14C500000000,lea,lea_12,rdx,ds:0[rax*8],1,2,N,,lea,C
+.text,00400A43,main,B25,T,488B45D0,mov,mov_14,rax,[rbp+var_30],1,4,N,,mov,C
+.text,00400A47,main,B25,T,4801D0,add,add_11,rax,rdx,1,1,N,,add,C
+.text,00400A4A,main,B25,T,488B00,mov,mov_13,rax,[rax],1,3,N,,mov,C
+.text,00400A4D,main,B25,T,BA0A000000,mov,mov_15,edx,0Ah,1,5,N,,mov,C
+.text,00400A52,main,B25,T,BE00000000,mov,mov_15,esi,0,1,5,N,,mov,C
+.text,00400A57,main,B25,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,00400A5A,main,B25,T,E8A1FBFFFF,call,call_70,_strtoul,,7,0,J,.CODE,call.CODE,C
+.text,00400A5F,main,B25,T,8845F7,mov,mov_41,[rbp+var_9],al,4,1,N,,mov,C
+.text,00400A62,main,B25,T,8B45FC,mov,mov_14,eax,[rbp+var_4],1,4,N,,mov,C
+.text,00400A65,main,B25,T,4898,cdqe,cdqe_10,,,1,0,N,,cdqe,C
+.text,00400A67,main,B25,T,0FB655F7,movzx,movzx_14,edx,[rbp+var_9],1,4,N,,movzx,C
+.text,00400A6B,main,B25,T,885405F0,mov,mov_41,[rbp+rax+var_10],dl,4,1,N,,mov,C
+.text,00400A6F,main,B25,T,8345FC01,add,add_45,[rbp+var_4],1,4,5,N,,add,C
+.text,00400A73,main,B26,T,837DFC03,cmp,cmp_45,[rbp+var_4],3,4,5,N,,cmp,C
+.text,00400A77,main,B26,T,7EB9,jle,jle_70,loc_400A32,,7,0,J,.CODE,jle.CODE,C
+.text,00400A79,main,B27,T,488D55E0,lea,lea_14,rdx,[rbp+var_20],1,4,N,,lea,C
+.text,00400A7D,main,B27,T,488D45F0,lea,lea_14,rax,[rbp+var_10],1,4,N,,lea,C
+.text,00400A81,main,B27,T,4889D6,mov,mov_11,rsi,rdx,1,1,N,,mov,C
+.text,00400A84,main,B27,T,4889C7,mov,mov_11,rdi,rax,1,1,N,,mov,C
+.text,00400A87,main,B27,T,E89AFCFFFF,call,call_70,function_1,,7,0,J,.CODE,call.CODE,C
+.text,00400A8C,main,B27,T,0FB645E1,movzx,movzx_14,eax,[rbp+var_1F],1,4,N,,movzx,C
+.text,00400A90,main,B27,T,3C90,cmp,cmp_15,al,90h,1,5,N,,cmp,C
+.text,00400A92,main,B27,T,750A,jnz,jnz_70,loc_400A9E,,7,0,J,.CODE,jnz.CODE,C
+.text,00400A94,main,B28,T,BFB50B4000,mov,mov_15,edi,offset s,1,5,N,_r.DATA,mov_r.DATA,C
+.text,00400A99,main,B28,T,E812FBFFFF,call,call_70,_puts,,7,0,J,.CODE,call.CODE,C
+.text,00400A9E,main,B29,T,C745F800000000,mov,mov_45,[rbp+var_8],0,4,5,N,,mov,C
+.text,00400AA5,main,B29,T,EB22,jmp,jmp_70,loc_400AC9,,7,0,J,.CODE,jmp.CODE,C
+.text,00400AA7,main,B30,T,8B45F8,mov,mov_14,eax,[rbp+var_8],1,4,N,,mov,C
+.text,00400AAA,main,B30,T,4898,cdqe,cdqe_10,,,1,0,N,,cdqe,C
+.text,00400AAC,main,B30,T,0FB64405E0,movzx,movzx_14,eax,[rbp+rax+var_20],1,4,N,,movzx,C
+.text,00400AB1,main,B30,T,0FB6C0,movzx,movzx_11,eax,al,1,1,N,,movzx,C
+.text,00400AB4,main,B30,T,89C6,mov,mov_11,esi,eax,1,1,N,,mov,C
+.text,00400AB6,main,B30,T,BFBE0B4000,mov,mov_15,edi,offset aU,1,5,N,_r.DATA,mov_r.DATA,C
+.text,00400ABB,main,B30,T,B800000000,mov,mov_15,eax,0,1,5,N,,mov,C
+.text,00400AC0,main,B30,T,E8FBFAFFFF,call,call_70,_printf,,7,0,J,.CODE,call.CODE,C
+.text,00400AC5,main,B30,T,8345F801,add,add_45,[rbp+var_8],1,4,5,N,,add,C
+.text,00400AC9,main,B31,T,837DF803,cmp,cmp_45,[rbp+var_8],3,4,5,N,,cmp,C
+.text,00400ACD,main,B31,T,7ED8,jle,jle_70,loc_400AA7,,7,0,J,.CODE,jle.CODE,C
+.text,00400ACF,main,B32,T,C9,leave,leave_00,,,0,0,N,,leave,C
+.text,00400AD0,main,B32,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400AE0,__libc_csu_init,B33,T,4157,push,push_10,r15,,1,0,N,,push,S
+.text,00400AE2,__libc_csu_init,B33,T,4189FF,mov,mov_11,r15d,edi,1,1,N,,mov,C
+.text,00400AE5,__libc_csu_init,B33,T,4156,push,push_10,r14,,1,0,N,,push,C
+.text,00400AE7,__libc_csu_init,B33,T,4989F6,mov,mov_11,r14,rsi,1,1,N,,mov,C
+.text,00400AEA,__libc_csu_init,B33,T,4155,push,push_10,r13,,1,0,N,,push,C
+.text,00400AEC,__libc_csu_init,B33,T,4989D5,mov,mov_11,r13,rdx,1,1,N,,mov,C
+.text,00400AEF,__libc_csu_init,B33,T,4154,push,push_10,r12,,1,0,N,,push,C
+.text,00400AF1,__libc_csu_init,B33,T,4C8D2520022000,lea,lea_12,r12,__frame_dummy_init_array_entry,1,2,N,_r.DATA,lea_r.DATA,C
+.text,00400AF8,__libc_csu_init,B33,T,55,push,push_10,rbp,,1,0,N,,push,C
+.text,00400AF9,__libc_csu_init,B33,T,488D2D20022000,lea,lea_12,rbp,__do_global_dtors_aux_fini_array_entry,1,2,N,_r.DATA,lea_r.DATA,C
+.text,00400B00,__libc_csu_init,B33,T,53,push,push_10,rbx,,1,0,N,,push,C
+.text,00400B01,__libc_csu_init,B33,T,4C29E5,sub,sub_11,rbp,r12,1,1,N,,sub,C
+.text,00400B04,__libc_csu_init,B33,T,31DB,xor,xor_11,ebx,ebx,1,1,N,,xor,C
+.text,00400B06,__libc_csu_init,B33,T,48C1FD03,sar,sar_15,rbp,3,1,5,N,,sar,C
+.text,00400B0A,__libc_csu_init,B33,T,4883EC08,sub,sub_15,rsp,8,1,5,N,,sub,C
+.text,00400B0E,__libc_csu_init,B33,T,E84DFAFFFF,call,call_70,_init_proc,,7,0,J,.CODE,call.CODE,C
+.text,00400B13,__libc_csu_init,B33,T,4885ED,test,test_11,rbp,rbp,1,1,N,,test,C
+.text,00400B16,__libc_csu_init,B33,T,741E,jz,jz_70,loc_400B36,,7,0,J,.CODE,jz.CODE,C
+.text,00400B18,__libc_csu_init,B34,T,0F1F840000000000,nop,nop_40,dword ptr [rax+rax+00000000h],,4,0,N,,nop,C
+.text,00400B20,__libc_csu_init,B35,T,4C89EA,mov,mov_11,rdx,r13,1,1,N,,mov,C
+.text,00400B23,__libc_csu_init,B35,T,4C89F6,mov,mov_11,rsi,r14,1,1,N,,mov,C
+.text,00400B26,__libc_csu_init,B35,T,4489FF,mov,mov_11,edi,r15d,1,1,N,,mov,C
+.text,00400B29,__libc_csu_init,B35,T,41FF14DC,call,call_30,qword ptr [r12+rbx*8],,3,0,J,,call,C
+.text,00400B2D,__libc_csu_init,B35,T,4883C301,add,add_15,rbx,1,1,5,N,,add,C
+.text,00400B31,__libc_csu_init,B35,T,4839EB,cmp,cmp_11,rbx,rbp,1,1,N,,cmp,C
+.text,00400B34,__libc_csu_init,B35,T,75EA,jnz,jnz_70,loc_400B20,,7,0,J,.CODE,jnz.CODE,C
+.text,00400B36,__libc_csu_init,B36,T,4883C408,add,add_15,rsp,8,1,5,N,,add,C
+.text,00400B3A,__libc_csu_init,B36,T,5B,pop,pop_10,rbx,,1,0,N,,pop,C
+.text,00400B3B,__libc_csu_init,B36,T,5D,pop,pop_10,rbp,,1,0,N,,pop,C
+.text,00400B3C,__libc_csu_init,B36,T,415C,pop,pop_10,r12,,1,0,N,,pop,C
+.text,00400B3E,__libc_csu_init,B36,T,415D,pop,pop_10,r13,,1,0,N,,pop,C
+.text,00400B40,__libc_csu_init,B36,T,415E,pop,pop_10,r14,,1,0,N,,pop,C
+.text,00400B42,__libc_csu_init,B36,T,415F,pop,pop_10,r15,,1,0,N,,pop,C
+.text,00400B44,__libc_csu_init,B36,T,C3,retn,retn_00,,,0,0,N,,retn,C
+.text,00400B50,__libc_csu_fini,B37,T,F3C3,retn,retn_00,,,0,0,N,,retn,S
