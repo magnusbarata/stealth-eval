@@ -147,16 +147,16 @@ $P_{jmp}$ & (2,304) & 分岐命令のカムフラージュ \\
 
 実験上では，CentOSのプログラムに含まれるアセンブリコードをコーパスとして使用している．\texttt{mov, push}のような単純なコードと，\texttt{mov\_r.CODE, mov\_w.BSS}のような命令の書き込み「\texttt{\_w}」または読み込み「\texttt{\_r}」操作や操作する際に参照されるアドレスのセグメント(\texttt{CODE, BSS})の詳細な情報を含むコードの2種類の3-gramモデルのコーパスを使用した．本論文では，前者を「OPC」，後者を「XRF」で表記し，これらはコードの粒度という．
 
-Tigressによるコード変形は関数単位で適用されるめ，3.1と3.2章に準備した$460+288+2,304=3,052$個のプログラムも関数単位で評価し，各プログラムグループの名称，合計の関数の数，適用されたコード変形や取得方法の概要を表~\ref{table:proglist}に示す．括弧で囲まれる関数の数は難読化された関数の数を示している．これらのプログラムをIDAで逆アセンブリし，以下の学習メトリクスを求める．
+Tigressによるコード変形は関数単位で適用されるめ，3.1と3.2章に準備した$460+288+2,304=3,052$個のプログラムも関数単位で評価し，各プログラムグループの名称，合計の関数の数，適用されたコード変形や取得方法の概要を表~\ref{table:proglist}に示す．括弧で囲まれる関数の数は難読化された関数の数を示している．これらのプログラムをIDAで逆アセンブルし，以下の学習メトリクスを求める．
 
 \begin{enumerate}
   \item \textbf{Art}: 関数を構成するコード全体の不自然さの指標である．コードの不自然さについては付録~\ref{appendix:artAndsurp}に示す．
   \item \textbf{Max}: コードを3-gram分割したときの関数の最大の「驚き値」(付録~\ref{appendix:artAndsurp})である．関数内の最も目立つコード列を見つけ出すという目的を持つメトリクスである．
-  \item \textbf{OT}: 3-gramのコード片の驚き値を求め，定められた閾値を超えた関数内のコード片の数である．閾値は，$P_{centos}$のMaxの平均値から求められ，OPCを7.42，XRFを7.77に設定した．つまり，あるコード片の驚き値が，多様な難読化されていないプログラムのMaxの平均値を超えた場合，そのコード片が異常であると考えられ，異常なコード片の総数を示すメトリクスである．
-  \item \textbf{Len}: 関数に含まれるコードの総数である．
-  \item \textbf{Unq}: 関数内の独特なコードの数である．例えば，関数が5つの\texttt{mov, and, push, push, mov}のコード$I=i_1...i_5$から構成されているとき，$i_n\in$ \{\texttt{mov, and, push}\}であり，$|i_n|=3$であるから，Unqは3となる．また，XRFの場合，\texttt{mov\_r.CODE, mov\_w.BSS}はいずれも\texttt{mov}命令であるが，命令操作や参照されるアドレスセグメントが異なるため，2つの独特なコードとして扱うことにしている．このメトリクスは，例えば\texttt{mov}のみを生成するコンパイラ~\cite{movfuscator}によって生成されるコードの特徴を把握できる．
+  \item \textbf{OT}: 3-gramのコード片の驚き値を求め，定められた閾値を超えた関数内のコード片の数である．閾値は，$P_{centos}$のMaxの平均値から求められる．ここでは，OPCの場合は閾値を7.42に，XRFの場合は閾値を7.77に設定した．つまり，あるコード片の驚き値が，多様な難読化されていないプログラムのMaxの平均値を超えた場合，そのコード片が異常であると考えられ，異常なコード片の総数を示すメトリクスである．
+  \item \textbf{Len}: 関数に含まれる命令の総数である．
+  \item \textbf{Unq}: 関数内のユニークな命令の数である．例えば，関数が5つの\texttt{mov, and, push, push, mov}のコード$I=i_1...i_5$から構成されているとき，$i_n\in$ \{\texttt{mov, and, push}\}であり，$|i_n|=3$であるから，Unqは3となる．また，XRFの場合，\texttt{mov\_r.CODE, mov\_w.BSS}はいずれも\texttt{mov}命令であるが，命令操作や参照されるアドレスセグメントが異なるため，2つの独特なコードとして扱うことにしている．このメトリクスは，例えば\texttt{mov}のみを生成するコンパイラ~\cite{movfuscator}によって生成されるコードの特徴を把握できる．
 \end{enumerate}
-(1)から(3)までのメトリクスは逆アセンブリされたプログラムのコードとコーパスをSRILMに与えて求めた．
+(1)から(3)までのメトリクスは逆アセンブルされたプログラムのコードとコーパスをSRILMに与えて求めた．
 
 \subsection{機械学習モデル}
 Step 3の実行に当たって，まず，データの特徴を把握するために，各メトリクス間の線形な関係の強弱指標である相関係数を求める必要がある．表~\ref{table:correl}は，全てのデータを結合した後のピアソン相関係数~\cite{pearson}を示し，全ての係数は正であることから全てのメトリクス間は比例することが分かる．
@@ -269,7 +269,7 @@ $P_{jump}$ & 100 & 12 & 21 & 100 & 12 & 21 \\
 \subsubsection{異常検知}
 サポートベクトルマシンを拡張したOne Class SVM~\cite{OCSVM}アルゴリズムを用いて，訓練データにラベル付けなくても特徴量(メトリクス)の構造を抽出できることが学習の目的である．本実験では，放射基底関数をSVMのカーネルにし，$P_{centos},\,P_{orig},\,P_{split}$を訓練データとして扱い，モデルを構築する．構築されたモデルに評価対象プログラムを順番に与え，そのプログラムは異常(難読化されている)かどうかを予測する．
 
-モデルの評価を行うために2クラス分類問題と同様に，難読化されたプログラムを負，難読化されていないプログラムを正のラベルを付けて正解率を評価指標とする．評価結果を表~\ref{table:ocsvmEval}に示す．訓練データの正解率の平均値は75\%以上であり，訓練データはなんらかの特徴を持つと考えられる．この表から，他のプログラム集合に比べて$P_{aaa}$や$P_{vir}$の正解率が比較的に高いことが分かった．また，OPCに比べてXRFの正解率が低いことも見られる．ただし，XRFの場合$P_{encl}$の正解率が最も高くなっており，$P_{jmp}$の正解率が上がることも確認できる．
+モデルの評価を行うために2クラス分類問題と同様に，難読化されたプログラムを負，難読化されていないプログラムを正のラベルを付けて正解率を評価指標とする．正解率については付録~\ref{appendix:MLeval}に示す．評価結果を表~\ref{table:ocsvmEval}に示す．訓練データの正解率の平均値は75\%以上であり，訓練データはなんらかの特徴を持つと考えられる．この表から，他のプログラム集合に比べて$P_{aaa}$や$P_{vir}$の正解率が比較的に高いことが分かった．また，OPCに比べてXRFの正解率が低いことも見られる．ただし，XRFの場合$P_{encl}$の正解率が最も高くなっており，$P_{jmp}$の正解率が上がることも確認できる．
 
 \begin{table}[b!]
 \centering
@@ -310,7 +310,7 @@ OPCの異常検知前後を図~\ref{fig:OCSVM_b4}と図~\ref{fig:OCSVM_af}に示
 異常検知を行なった後の図~\ref{fig:OCSVM_af}を見ると，いくつかの誤認したところを確認できる．この異常検知モデルにより，各難読化手法は特徴を持つことを確認できるが，訓練データにラベルを付けないため，分類モデルに比べて正解率が低くなると考えられる．
 
 \subsection{ステルス数値化法の有効性}
-ランダムフォレストのモデル構築に当たって，特徴量の重要度を計算することもできる．特徴量の重要度は以下の手順に従って求められる．
+ランダムフォレストのモデル構築に当たって，特徴量の重要度~\cite{featureSelection}\cite{forestImportances}を計算することもできる．特徴量の重要度は以下の手順に従って求められる．
 
 \begin{enumerate}[label=\arabic*.]
   \item ある特徴量に属するデータをランダムに変化させ，変化前後の正解率の差を求める．
@@ -397,6 +397,15 @@ Breiman, L.
 Sch\"{o}lkopf, B., Platt, J. C., Shawe-Taylor, J., Smola, A. J., Williamson, R. C.
 ``Estimating the Support of a High-Dimensional Distribution'',
 \textit{Neural computation 13.7} (2001), 1443-1471
+
+\bibitem{featureSelection}
+Feature Selection, 
+\url{http://scikit-learn.org/stable/modules/feature_selection.html}
+
+\bibitem{forestImportances}
+Feature importances with forests of trees, 
+\url{http://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html#sphx-glr-auto-examples-ensemble-plot-forest-importances-py}
+
 \end{thebibliography}
 \noindent （URLは2018年2月現在）
 
